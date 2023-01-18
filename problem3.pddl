@@ -1,9 +1,10 @@
+;aumento de pasajeros
 (define 
     (problem LIFT-PROBLEM)
     (:domain LIFT)
         (:objects
             n0 n1 n2 n3 n4 n5 n6 n7 n8 n9 n10 n11 n12  - integer ; contadores (capacidad en el ascensor y secuencia de pisos)
-            p0 p1 p2 p3 p4 p5 - passenger ; pasajeros
+            p0 p1 p2 p3 p4 p5 p6 p7 - passenger ; pasajeros
             slow fast - lift ; tipos de ascensores
             lift1 lift2 lift3 lift4 - slow ; ascensores lentos
             lift5 - fast ; ascensores rapidos
@@ -60,9 +61,11 @@
             (passenger-at p2 n1)
             (passenger-at p3 n8)
             (passenger-at p4 n1)
+            (passenger-at p6 n1)
+            (passenger-at p7 n7)
         )
     (:goal (and 
-            (passenger-at p0 n3) (passenger-at p1 n11) (passenger-at p2 n12) (passenger-at p3 n1) (passenger-at p4 n9)
+            (passenger-at p0 n3) (passenger-at p1 n11) (passenger-at p2 n12) (passenger-at p3 n1) (passenger-at p4 n9) (passenger-at p6 n12) (passenger-at p7 n0)
         )
     )
 )

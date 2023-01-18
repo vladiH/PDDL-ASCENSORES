@@ -1,3 +1,4 @@
+;cambio de posiciones inicial
 (define 
     (problem LIFT-PROBLEM)
     (:domain LIFT)
@@ -55,11 +56,11 @@
             (on-board lift5 n0)
             (lift-at lift5 n0)
 
-            (passenger-at p0 n2)
-            (passenger-at p1 n4)
-            (passenger-at p2 n1)
-            (passenger-at p3 n8)
-            (passenger-at p4 n1)
+            (passenger-at p0 n9)
+            (passenger-at p1 n12)
+            (passenger-at p2 n4)
+            (passenger-at p3 n3)
+            (passenger-at p4 n0)
         )
     (:goal (and 
             (passenger-at p0 n3) (passenger-at p1 n11) (passenger-at p2 n12) (passenger-at p3 n1) (passenger-at p4 n9)

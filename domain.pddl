@@ -19,13 +19,13 @@
     	     :parameters (?l - lift ?p - passenger ?f - integer ?bn - integer ?an - integer)
     	     :precondition (and (passenger-at ?p ?f) (lift-at ?l ?f) (on-board ?l ?bn) (can-hold ?l ?an)  (next ?bn ?an))
     	     :effect
-    	     (and (not (passenger-at ?p ?f)) (boarded ?p ?l) (on-board ?l ?an)))
+    	     (and (not (passenger-at ?p ?f)) (boarded ?p ?l)(not (on-board ?l ?bn) ) (on-board ?l ?an)))
 
    (:action get-down
     	     :parameters (?l - lift ?p - passenger ?f - integer ?bn - integer ?an - integer)
     	     :precondition (and  (lift-at ?l ?f) (boarded ?p ?l) (on-board ?l ?bn) (next?an ?bn))
     	     :effect
-    	     (and (not(boarded ?p ?l)) (passenger-at ?p ?f) (on-board ?l ?an)))
+    	     (and (not(boarded ?p ?l)) (passenger-at ?p ?f)(not (on-board ?l ?bn) ) (on-board ?l ?an)))
 
    (:action move-up
 	     :parameters (?l - lift ?f1 - integer ?f2 - integer)

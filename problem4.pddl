@@ -1,3 +1,4 @@
+; nuevos ascensores 6 lento y 7 rapido
 (define 
     (problem LIFT-PROBLEM)
     (:domain LIFT)
@@ -5,8 +6,8 @@
             n0 n1 n2 n3 n4 n5 n6 n7 n8 n9 n10 n11 n12  - integer ; contadores (capacidad en el ascensor y secuencia de pisos)
             p0 p1 p2 p3 p4 p5 - passenger ; pasajeros
             slow fast - lift ; tipos de ascensores
-            lift1 lift2 lift3 lift4 - slow ; ascensores lentos
-            lift5 - fast ; ascensores rapidos
+            lift1 lift2 lift3 lift4 lift6 - slow ; ascensores lentos
+            lift5 lift7 - fast ; ascensores rapidos
         )
         (:init
             ;=============================incremento=================================================
@@ -54,6 +55,16 @@
             (can-hold lift5 n0) (can-hold lift5 n1) (can-hold lift5 n2) (can-hold lift5 n3)
             (on-board lift5 n0)
             (lift-at lift5 n0)
+            ;=================== estados iniciales del ascensor 6 lento =========================
+            (can-go lift6 n8) (can-go lift6 n9)  (can-go lift6 n10) (can-go lift6 n11) (can-go lift6 n12)
+            (can-hold lift6 n0) (can-hold lift6 n1) (can-hold lift6 n2)
+            (on-board lift6 n0)
+            (lift-at lift6 n11)
+            ;=================== estados iniciales del ascensor 7 rapido =========================
+            (can-go lift7 n0) (can-go lift7 n3)  (can-go lift7 n6) (can-go lift7 n9) (can-go lift7 n12)
+            (can-hold lift7 n0) (can-hold lift7 n1) (can-hold lift7 n2) (can-hold lift7 n3)
+            (on-board lift7 n0)
+            (lift-at lift7 n12)
 
             (passenger-at p0 n2)
             (passenger-at p1 n4)
