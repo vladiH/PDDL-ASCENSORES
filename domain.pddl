@@ -8,18 +8,18 @@
     (next ?x - integer ?y - integer) 
 	(above ?x - integer ?y - integer)
 	(can-go ?x - lift ?y - integer)
-	(can-hold ?x - lift ?y  - passengers)
+	(can-hold ?x - lift ?y  - passenger)
 	(passenger-at ?x - passenger ?y - integer)
 	(lift-at ?x - lift ?y - integer)
 	(boarded ?y - passenger ?x - lift)
-	(on-board ?x - lift ?y - passengers)
+	(on-board ?x - lift ?y - passenger)
   )
 
    (:action get-on
     	     :parameters (?l - lift ?p - passenger ?f - integer ?bn - integer ?an - integer)
     	     :precondition (and (passenger-at ?p ?f) (lift-at ?l ?f) (on-board ?l ?bn) (can-hold ?l ?an)  (next ?bn ?an))
     	     :effect
-    	     (and (not (passenger-at ?p ?f)) (not (lift-at ?l ?f)) (boarded ?p ?l) (on-board ?l ?an)))
+    	     (and (not (passenger-at ?p ?f)) (boarded ?p ?l) (on-board ?l ?an)))
 
    (:action get-down
     	     :parameters (?l - lift ?p - passenger ?f - integer ?bn - integer ?an - integer)
