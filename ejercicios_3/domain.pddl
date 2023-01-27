@@ -18,7 +18,9 @@
 
   (:functions 
             (travel-slow ?f1 - integer ?f2 - integer) - number
-            (travel-fast ?f1 - integer ?f2 - integer) - number 
+            (travel-fast ?f1 - integer ?f2 - integer) - number
+			(uncharge ?l - lift) - number 
+			(battery-level ?l - lift) - number
   )
 
    (:durative-action get-on
@@ -38,29 +40,29 @@
    (:durative-action move-up-slow
 	     :parameters (?l - lift-slow ?f1 - integer ?f2 - integer)
 		 :duration (= ?duration (travel-slow ?f1 ?f2))
-	     :condition (and (at start(lift-at ?l ?f1)) (at start(can-go ?l ?f2)) (at start(above ?f1 ?f2)))
+	     :condition (and (at start(lift-at ?l ?f1)) (at start(can-go ?l ?f2)) (at start(above ?f1 ?f2)) (at start (>= (battery-level ?l) (* (uncharge ?l) (travel-slow ?f1 ?f2)))))
 	     :effect
-	     (and (at start (not (lift-at ?l ?f1))) (at end  (lift-at ?l ?f2))))
+	     (and (at start (not (lift-at ?l ?f1))) (at end  (lift-at ?l ?f2)) (at end (decrease (battery-level ?l) (* (uncharge ?l) (travel-slow ?f1 ?f2)))) ))
 
     (:durative-action move-down-slow
     	        :parameters (?l - lift-slow ?f1 - integer ?f2 - integer)
 				:duration (= ?duration (travel-slow ?f2 ?f1))
-    	        :condition (and (at start(lift-at ?l ?f1)) (at start(can-go ?l ?f2)) (at start(above ?f2 ?f1)))
+    	        :condition (and (at start(lift-at ?l ?f1)) (at start(can-go ?l ?f2)) (at start(above ?f2 ?f1)) (at start (>= (battery-level ?l) (* (uncharge ?l) (travel-slow ?f2 ?f1)))))
     	        :effect
-	     (and (at start (not (lift-at ?l ?f1))) (at end (lift-at ?l ?f2)) ))
+	     (and (at start (not (lift-at ?l ?f1))) (at end (lift-at ?l ?f2)) (at end (decrease (battery-level ?l) (* (uncharge ?l) (travel-slow ?f2 ?f1))))))
 
 	;=====================================ascensor rapido========================================
 	(:durative-action move-up-fast
 	     :parameters (?l - lift-fast ?f1 - integer ?f2 - integer)
 		 :duration (= ?duration (travel-fast ?f1 ?f2))
-	     :condition (and (at start(lift-at ?l ?f1)) (at start(can-go ?l ?f2)) (at start(above ?f1 ?f2)))
+	     :condition (and (at start(lift-at ?l ?f1)) (at start(can-go ?l ?f2)) (at start(above ?f1 ?f2)) (at start (>= (battery-level ?l) (* (uncharge ?l) (travel-fast ?f1 ?f2)))))
 	     :effect
-	     (and (at start (not (lift-at ?l ?f1))) (at end  (lift-at ?l ?f2))))
+	     (and (at start (not (lift-at ?l ?f1))) (at end  (lift-at ?l ?f2)) (at end (decrease (battery-level ?l) (* (uncharge ?l) (travel-fast ?f1 ?f2))))))
 
     (:durative-action move-down-fast
     	        :parameters (?l - lift-fast ?f1 - integer ?f2 - integer)
 				:duration (= ?duration (travel-fast ?f1 ?f2))
-    	        :condition (and (at start(lift-at ?l ?f1)) (at start(can-go ?l ?f2)) (at start(above ?f2 ?f1)))
-    	        :effect
-	     (and (at start (not (lift-at ?l ?f1))) (at end (lift-at ?l ?f2)) ))
+    	        :condition (and (at start(lift-at ?l ?f1)) (at start(can-go ?l ?f2)) (at start(above ?f2 ?f1)) (at start (>= (battery-level ?l) (* (uncharge ?l) (travel-fast ?f1 ?f2)))))
+    	        :effect (and (at start (not (lift-at ?l ?f1))) (at end (lift-at ?l ?f2)) (at end (decrease (battery-level ?l) (* (uncharge ?l) (travel-fast ?f1 ?f2)))))
+	)
 )    

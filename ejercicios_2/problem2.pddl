@@ -1,3 +1,4 @@
+;cambio la situacion inicial de los ancensores y el objetivo final
 (define 
     (problem LIFT-PROBLEM)
     (:domain LIFT)
@@ -60,31 +61,31 @@
             (can-go lift1 n0) (can-go lift1 n1)  (can-go lift1 n2) (can-go lift1 n3) (can-go lift1 n4); a que pisos puede ir?
             (can-hold lift1 n0) (can-hold lift1 n1) (can-hold lift1 n2); cuantas personas soporta el ascensor?
             (on-board lift1 n0); cuantos estan dentro del ascensor
-            (lift-at lift1 n0); donde se encuentra el ascensor?
+            (lift-at lift1 n3); donde se encuentra el ascensor?
 
             ;=================== estados iniciales del ascensor 2 lento =========================
             (can-go lift2 n4) (can-go lift2 n5)  (can-go lift2 n6) (can-go lift2 n7) (can-go lift2 n8)
             (can-hold lift2 n0) (can-hold lift2 n1) (can-hold lift2 n2)
             (on-board lift2 n0)
-            (lift-at lift2 n5)
+            (lift-at lift2 n8)
 
             ;=================== estados iniciales del ascensor 3 lento  =========================
             (can-go lift3 n4) (can-go lift3 n5)  (can-go lift3 n6) (can-go lift3 n7) (can-go lift3 n8)
             (can-hold lift3 n0) (can-hold lift3 n1) (can-hold lift3 n2)
             (on-board lift3 n0)
-            (lift-at lift3 n5)
+            (lift-at lift3 n7)
 
             ;=================== estados iniciales del ascensor 4 lento =========================
             (can-go lift4 n8) (can-go lift4 n9)  (can-go lift4 n10) (can-go lift4 n11) (can-go lift4 n12)
             (can-hold lift4 n0) (can-hold lift4 n1) (can-hold lift4 n2)
             (on-board lift4 n0)
-            (lift-at lift4 n9)
+            (lift-at lift4 n12)
 
             ;=================== estados iniciales del ascensor 5 rapido =========================
             (can-go lift5 n0) (can-go lift5 n2)  (can-go lift5 n4) (can-go lift5 n6) (can-go lift5 n8) (can-go lift5 n10) (can-go lift5 n12)
             (can-hold lift5 n0) (can-hold lift5 n1) (can-hold lift5 n2) (can-hold lift5 n3)
             (on-board lift5 n0)
-            (lift-at lift5 n0)
+            (lift-at lift5 n12)
 
             (passenger-at p0 n2)
             (passenger-at p1 n4)
@@ -93,12 +94,10 @@
             (passenger-at p4 n1)
         )
     (:goal (and 
-            (passenger-at p0 n3) (passenger-at p1 n11) (passenger-at p2 n12) (passenger-at p3 n1) (passenger-at p4 n9)
+            (passenger-at p0 n4) (passenger-at p1 n8) (passenger-at p2 n12) (passenger-at p3 n1) (passenger-at p4 n4)
         )
     )
 )
 
 
 ; ./lpg-td-1.0 -o domain.pddl -f problem.pddl -n 1 -out sol.txt   ;; fichero para la solución
-
-sudo apt-get install cmake coinor-libcbc-dev coinor-libclp-dev \coinor-libcoinutils-dev libbz2-dev bison flex

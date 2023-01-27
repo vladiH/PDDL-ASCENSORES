@@ -55,6 +55,11 @@
             (= (travel-fast n4 n2) 10) (= (travel-fast n4 n0) 12)
             (= (travel-fast n2 n0) 10)
 
+            ;============================ nivel de bateria asencores ==============
+            (= (battery-level lift1) 100) (= (battery-level lift2) 100) (= (battery-level lift3) 100) (= (battery-level lift4) 100) (= (battery-level lift5) 100)
+
+            ;============================ uncharge voleres ==============
+            (= (uncharge lift1) 0.2 ) (= (uncharge lift2) 0.2 ) (= (uncharge lift3) 0.2 ) (= (uncharge lift4) 0.2 ) (= (uncharge lift5) 0.2 )
 
             ;=================== estados iniciales del ascensor 1 lento =========================
             (can-go lift1 n0) (can-go lift1 n1)  (can-go lift1 n2) (can-go lift1 n3) (can-go lift1 n4); a que pisos puede ir?
@@ -96,9 +101,10 @@
             (passenger-at p0 n3) (passenger-at p1 n11) (passenger-at p2 n12) (passenger-at p3 n1) (passenger-at p4 n9)
         )
     )
+    (:metric minimize (total-time))
 )
 
 
 ; ./lpg-td-1.0 -o domain.pddl -f problem.pddl -n 1 -out sol.txt   ;; fichero para la solución
 
-sudo apt-get install cmake coinor-libcbc-dev coinor-libclp-dev \coinor-libcoinutils-dev libbz2-dev bison flex
+; sudo apt-get install cmake coinor-libcbc-dev coinor-libclp-dev \coinor-libcoinutils-dev libbz2-dev bison flex
