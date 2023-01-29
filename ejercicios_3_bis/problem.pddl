@@ -62,10 +62,10 @@
             (= (battery-capacity lift1) 100) (= (battery-capacity lift2) 100) (= (battery-capacity lift3) 100) (= (battery-capacity lift4) 100) (= (battery-capacity lift5) 100)
 
             ;============================ uncharge valores ==============
-            (= (uncharge lift1) 0.2 ) (= (uncharge lift2) 0.2 ) (= (uncharge lift3) 0.2 ) (= (uncharge lift4) 0.2 ) (= (uncharge lift5) 0.2 )
+            (= (uncharge lift1) 2 ) (= (uncharge lift2) 2 ) (= (uncharge lift3) 2 ) (= (uncharge lift4) 2 ) (= (uncharge lift5) 2 )
 
             ;============================ charge valores ==============
-            (= (charge lift1) 10 ) (= (charge lift2) 10 ) (= (charge lift3) 10 ) (= (charge lift4) 10 ) (= (charge lift5) 10 )
+            (= (charge lift1) 8 ) (= (charge lift2) 8 ) (= (charge lift3) 8 ) (= (charge lift4) 8 ) (= (charge lift5) 8 )
 
             ;=================== estados iniciales del ascensor 1 lento =========================
             (can-go lift1 n0) (can-go lift1 n1)  (can-go lift1 n2) (can-go lift1 n3) (can-go lift1 n4); a que pisos puede ir?
@@ -104,16 +104,16 @@
             (passenger-at p4 n1)
 
             ;=================== donde estan los cargadores =========================
-            (have-charger n4) (have-charger n8)
+            (have-charger n4) (have-charger n8) (have-charger n6) (have-charger n2) (have-charger n10)
         )
     (:goal (and 
             (passenger-at p0 n3) (passenger-at p1 n11) (passenger-at p2 n12) (passenger-at p3 n1) (passenger-at p4 n9)
         )
     )
-    (:metric minimize (battery-level))
+    (:metric minimize (total-time))
 )
 
 
-; ./lpg-td-1.0 -o domain.pddl -f problem.pddl -n 1 -out sol.txt   ;; fichero para la solución
+; ./lpg -o domain.pddl -f problem.pddl -n 5 -out sol.txt   ;; fichero para la solución
 
 ; sudo apt-get install cmake coinor-libcbc-dev coinor-libclp-dev \coinor-libcoinutils-dev libbz2-dev bison flex

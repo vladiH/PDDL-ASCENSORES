@@ -88,12 +88,10 @@
 
 	(:durative-action recharge
 		:parameters (?l - lift ?f - integer)
-		:duration (= ?duration (* (charge ?l) (- (battery-capacity ?l) (battery-level ?l))))
+		:duration (= ?duration (/ (- (battery-capacity ?l) (battery-level ?l)) (charge ?l)))
 		:condition (and
 			(at start (and
-				(> (battery-capacity ?l) (battery-level ?l))
-				(have-charger ?f)
-				))
+				(have-charger ?f)))
 			(over all (lift-at ?l ?f))
 		)
 		:effect ( at end (assign (battery-level ?l) (battery-capacity ?l)))
