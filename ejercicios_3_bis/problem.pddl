@@ -58,8 +58,14 @@
             ;============================ nivel de bateria asencores ==============
             (= (battery-level lift1) 100) (= (battery-level lift2) 100) (= (battery-level lift3) 100) (= (battery-level lift4) 100) (= (battery-level lift5) 100)
 
-            ;============================ uncharge voleres ==============
+            ;============================ capacidad bateria asencores ==============
+            (= (battery-capacity lift1) 100) (= (battery-capacity lift2) 100) (= (battery-capacity lift3) 100) (= (battery-capacity lift4) 100) (= (battery-capacity lift5) 100)
+
+            ;============================ uncharge valores ==============
             (= (uncharge lift1) 0.2 ) (= (uncharge lift2) 0.2 ) (= (uncharge lift3) 0.2 ) (= (uncharge lift4) 0.2 ) (= (uncharge lift5) 0.2 )
+
+            ;============================ charge valores ==============
+            (= (charge lift1) 10 ) (= (charge lift2) 10 ) (= (charge lift3) 10 ) (= (charge lift4) 10 ) (= (charge lift5) 10 )
 
             ;=================== estados iniciales del ascensor 1 lento =========================
             (can-go lift1 n0) (can-go lift1 n1)  (can-go lift1 n2) (can-go lift1 n3) (can-go lift1 n4); a que pisos puede ir?
@@ -96,6 +102,9 @@
             (passenger-at p2 n1)
             (passenger-at p3 n8)
             (passenger-at p4 n1)
+
+            ;=================== donde estan los cargadores =========================
+            (have-charger n4) (have-charger n8)
         )
     (:goal (and 
             (passenger-at p0 n3) (passenger-at p1 n11) (passenger-at p2 n12) (passenger-at p3 n1) (passenger-at p4 n9)
