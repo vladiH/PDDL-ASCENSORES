@@ -21,7 +21,6 @@
             (travel-fast ?f1 - integer ?f2 - integer) - number
 			(uncharge ?l - lift) - number 
 			(battery-level ?l - lift) - number
-			
   )
 
    (:durative-action get-on
