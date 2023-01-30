@@ -1,0 +1,390 @@
+3)
+    3.1.A) LPG, RECURSOS NO RENOVABLE MINIMIZANDO TOTAL_ENERGY_USED
+    Plan computed:
+   Time: (ACTION) [action Duration; action Cost]
+    0.0000: (MOVE-UP-SLOW LIFT1 N0 N1) [D:12.00; C:2.40]
+    0.0000: (MOVE-DOWN-SLOW LIFT4 N9 N8) [D:12.00; C:2.40]
+    12.0000: (GET-ON LIFT1 P4 N1 N0 N1) [D:2.00; C:0.10]
+    14.0000: (GET-ON LIFT1 P2 N1 N1 N2) [D:2.00; C:0.10]
+    16.0000: (MOVE-DOWN-SLOW LIFT1 N1 N0) [D:12.00; C:2.40]
+    28.0000: (GET-DOWN LIFT1 P2 N0 N2 N1) [D:2.00; C:0.10]
+    30.0000: (GET-ON LIFT5 P2 N0 N0 N1) [D:2.00; C:0.10]
+    30.0000: (MOVE-UP-SLOW LIFT1 N0 N2) [D:20.00; C:8.00]
+    32.0000: (MOVE-UP-FAST LIFT5 N0 N2) [D:11.00; C:4.40]
+    50.0000: (GET-DOWN LIFT1 P4 N2 N1 N0) [D:2.00; C:0.10]
+    52.0000: (MOVE-DOWN-SLOW LIFT1 N2 N0) [D:20.00; C:8.00]
+    52.0000: (GET-ON LIFT5 P4 N2 N1 N2) [D:2.00; C:0.10]
+    54.0000: (MOVE-UP-FAST LIFT5 N2 N8) [D:15.00; C:18.00]
+    69.0000: (GET-DOWN LIFT5 P4 N8 N2 N1) [D:2.00; C:0.10]
+    71.0000: (MOVE-DOWN-FAST LIFT5 N8 N6) [D:10.00; C:4.00]
+    71.0000: (GET-ON LIFT4 P4 N8 N0 N1) [D:2.00; C:0.10]
+    72.0000: (MOVE-UP-SLOW LIFT1 N0 N2) [D:20.00; C:8.00]
+    73.0000: (MOVE-UP-SLOW LIFT4 N8 N9) [D:12.00; C:2.40]
+    81.0000: (MOVE-UP-FAST LIFT5 N6 N12) [D:15.00; C:18.00]
+    85.0000: (GET-DOWN LIFT4 P4 N9 N1 N0) [D:2.00; C:0.10]
+    87.0000: (MOVE-UP-SLOW LIFT4 N9 N10) [D:12.00; C:2.40]
+    92.0000: (GET-ON LIFT1 P0 N2 N0 N1) [D:2.00; C:0.10]
+    94.0000: (MOVE-UP-SLOW LIFT1 N2 N4) [D:20.00; C:8.00]
+    96.0000: (GET-DOWN LIFT5 P2 N12 N1 N0) [D:2.00; C:0.10]
+    98.0000: (MOVE-DOWN-FAST LIFT5 N12 N8) [D:12.00; C:9.60]
+    110.0000: (GET-ON LIFT5 P3 N8 N0 N1) [D:2.00; C:0.10]
+    112.0000: (MOVE-DOWN-FAST LIFT5 N8 N4) [D:12.00; C:9.60]
+    124.0000: (GET-DOWN LIFT5 P3 N4 N1 N0) [D:2.00; C:0.10]
+    126.0000: (GET-ON LIFT1 P3 N4 N1 N2) [D:2.00; C:0.10]
+    126.0000: (GET-ON LIFT5 P1 N4 N0 N1) [D:2.00; C:0.10]
+    128.0000: (GET-DOWN LIFT1 P0 N4 N2 N1) [D:2.00; C:0.10]
+    128.0000: (MOVE-UP-FAST LIFT5 N4 N10) [D:15.00; C:18.00]
+    130.0000: (GET-ON LIFT1 P0 N4 N1 N2) [D:2.00; C:0.10]
+    132.0000: (MOVE-DOWN-SLOW LIFT1 N4 N3) [D:12.00; C:2.40]
+    143.0000: (GET-DOWN LIFT5 P1 N10 N1 N0) [D:2.00; C:0.10]
+    144.0000: (GET-DOWN LIFT1 P0 N3 N2 N1) [D:2.00; C:0.10]
+    145.0000: (GET-ON LIFT4 P1 N10 N0 N1) [D:2.00; C:0.10]
+    146.0000: (MOVE-DOWN-SLOW LIFT1 N3 N1) [D:20.00; C:8.00]
+    147.0000: (MOVE-UP-SLOW LIFT4 N10 N11) [D:12.00; C:2.40]
+    159.0000: (GET-DOWN LIFT4 P1 N11 N1 N0) [D:2.00; C:0.10]
+    166.0000: (GET-DOWN LIFT1 P3 N1 N1 N0) [D:2.00; C:0.10]
+
+
+
+    METRIC_VALUE = 138.40
+    Solution number: 3
+    Total time:      11.66
+    Search time:     11.65
+    Actions:         41
+    Duration:        168.000
+    Plan quality:    138.400
+    Total Num Flips: 7898
+        Plan file:       plan_problem0.pddl_3.SOL
+
+
+    3.1.B) OPTIC, RECURSOS NO RENOVABLE MINIMIZANDO TOTAL_ENERGY_USED
+    ; Plan found with metric 207.200
+    ; Theoretical reachable cost 207.200
+    ; States evaluated so far: 18511
+    ; States pruned based on pre-heuristic cost lower bound: 587
+    ; Time 45.58
+    0.000: (move-down-slow lift4 n9 n8)  [12.000]
+    0.000: (move-up-fast lift5 n0 n4)  [13.000]
+    0.000: (move-up-slow lift1 n0 n1)  [12.000]
+    12.000: (get-on lift4 p3 n8 n0 n1)  [2.000]
+    12.000: (get-on lift1 p4 n1 n0 n1)  [2.000]
+    14.000: (move-up-slow lift4 n8 n12)  [36.000]
+    14.002: (get-on lift1 p2 n1 n1 n2)  [2.000]
+    16.002: (move-down-slow lift1 n1 n0)  [12.000]
+    22.001: (get-on lift5 p1 n4 n0 n1)  [2.000]
+    24.001: (move-down-fast lift5 n4 n0)  [12.000]
+    28.002: (get-down lift1 p4 n0 n2 n1)  [2.000]
+    30.003: (get-down lift1 p2 n0 n1 n0)  [2.000]
+    32.003: (move-up-slow lift1 n0 n2)  [20.000]
+    36.001: (get-on lift5 p4 n0 n1 n2)  [2.000]
+    38.002: (get-on lift5 p2 n0 n2 n3)  [2.000]
+    40.002: (move-up-fast lift5 n0 n12)  [21.000]
+    50.000: (get-down lift4 p3 n12 n1 n0)  [2.000]
+    52.000: (move-down-slow lift4 n12 n11)  [12.000]
+    52.003: (get-on lift1 p0 n2 n0 n1)  [2.000]
+    54.003: (move-down-slow lift1 n2 n0)  [20.000]
+    61.002: (get-down lift5 p4 n12 n3 n2)  [2.000]
+    63.003: (get-down lift5 p2 n12 n2 n1)  [2.000]
+    64.001: (move-up-slow lift4 n11 n12)  [12.000]
+    65.004: (get-on lift5 p3 n12 n1 n2)  [2.000]
+    67.005: (get-down lift5 p1 n12 n2 n1)  [2.000]
+    69.005: (move-down-fast lift5 n12 n0)  [20.000]
+    76.001: (get-on lift4 p4 n12 n0 n1)  [2.000]
+    78.002: (get-on lift4 p1 n12 n1 n2)  [2.000]
+    80.002: (move-down-slow lift4 n12 n11)  [12.000]
+    89.005: (get-down lift5 p3 n0 n1 n0)  [2.000]
+    91.006: (get-on lift1 p3 n0 n1 n2)  [2.000]
+    92.002: (get-down lift4 p1 n11 n2 n1)  [2.000]
+    93.006: (move-up-slow lift1 n0 n3)  [28.000]
+    94.002: (move-down-slow lift4 n11 n10)  [12.000]
+    106.003: (move-down-slow lift4 n10 n9)  [12.000]
+    118.003: (get-down lift4 p4 n9 n1 n0)  [2.000]
+    121.006: (get-down lift1 p0 n3 n2 n1)  [2.000]
+    123.006: (move-down-slow lift1 n3 n1)  [20.000]
+    143.006: (get-down lift1 p3 n1 n1 n0)  [2.000]
+
+3.2.A) LPG, RECURSOS RENOVABLE MINIMIZANDO TOTAL_ENERGY_USED
+Plan computed:
+   Time: (ACTION) [action Duration; action Cost]
+    0.0000: (MOVE-DOWN-SLOW LIFT4 N9 N8) [D:12.00; C:24.00]
+    0.0000: (MOVE-UP-SLOW LIFT1 N0 N1) [D:12.00; C:24.00]
+    0.0000: (MOVE-UP-FAST LIFT5 N0 N2) [D:11.00; C:44.00]
+    11.0000: (GET-ON LIFT5 P0 N2 N0 N1) [D:2.00; C:0.10]
+    12.0000: (GET-ON LIFT1 P4 N1 N0 N1) [D:2.00; C:0.10]
+    14.0000: (MOVE-UP-SLOW LIFT1 N1 N2) [D:12.00; C:24.00]
+    26.0000: (GET-DOWN LIFT1 P4 N2 N1 N0) [D:2.00; C:0.10]
+    28.0000: (GET-ON LIFT5 P4 N2 N1 N2) [D:2.00; C:0.10]
+    30.0000: (MOVE-UP-FAST LIFT5 N2 N6) [D:13.00; C:104.00]
+    43.0000: (MOVE-UP-FAST LIFT5 N6 N8) [D:11.00; C:44.00]
+    54.0000: (GET-DOWN LIFT5 P4 N8 N2 N1) [D:2.00; C:0.10]
+    54.0000: (RECHARGE LIFT5 N8) [D:24.00; C:0.10]
+    56.0000: (GET-ON LIFT4 P4 N8 N0 N1) [D:2.00; C:0.10]
+    56.0000: (GET-ON LIFT5 P3 N8 N1 N2) [D:2.00; C:0.10]
+    58.0000: (MOVE-UP-SLOW LIFT4 N8 N9) [D:12.00; C:24.00]
+    70.0000: (GET-DOWN LIFT4 P4 N9 N1 N0) [D:2.00; C:0.10]
+    72.0000: (MOVE-UP-SLOW LIFT4 N9 N10) [D:12.00; C:24.00]
+    78.0000: (MOVE-DOWN-FAST LIFT5 N8 N6) [D:10.00; C:40.00]
+    88.0000: (MOVE-DOWN-FAST LIFT5 N6 N2) [D:12.00; C:96.00]
+    100.0000: (GET-DOWN LIFT5 P3 N2 N2 N1) [D:2.00; C:0.10]
+    102.0000: (GET-ON LIFT1 P3 N2 N0 N1) [D:2.00; C:0.10]
+    104.0000: (MOVE-DOWN-SLOW LIFT1 N2 N1) [D:12.00; C:24.00]
+    116.0000: (GET-DOWN LIFT1 P3 N1 N1 N0) [D:2.00; C:0.10]
+    118.0000: (GET-ON LIFT1 P2 N1 N0 N1) [D:2.00; C:0.10]
+    120.0000: (MOVE-UP-SLOW LIFT1 N1 N2) [D:12.00; C:24.00]
+    132.0000: (GET-DOWN LIFT1 P2 N2 N1 N0) [D:2.00; C:0.10]
+    132.0000: (RECHARGE LIFT1 N2) [D:12.00; C:0.10]
+    134.0000: (GET-ON LIFT5 P2 N2 N1 N2) [D:2.00; C:0.10]
+    136.0000: (GET-DOWN LIFT5 P0 N2 N2 N1) [D:2.00; C:0.10]
+    138.0000: (MOVE-UP-FAST LIFT5 N2 N4) [D:11.00; C:44.00]
+    138.0000: (GET-ON LIFT1 P0 N2 N0 N1) [D:2.00; C:0.10]
+    144.0000: (MOVE-UP-SLOW LIFT1 N2 N3) [D:12.00; C:24.00]
+    149.0000: (GET-ON LIFT5 P1 N4 N1 N2) [D:2.00; C:0.10]
+    149.0000: (RECHARGE LIFT5 N4) [D:22.50; C:0.10]
+    156.0000: (GET-DOWN LIFT1 P0 N3 N1 N0) [D:2.00; C:0.10]
+    171.5000: (MOVE-UP-FAST LIFT5 N4 N6) [D:11.00; C:44.00]
+    182.5000: (MOVE-UP-FAST LIFT5 N6 N8) [D:11.00; C:44.00]
+    193.5000: (MOVE-UP-FAST LIFT5 N8 N10) [D:11.00; C:44.00]
+    204.5000: (GET-DOWN LIFT5 P1 N10 N2 N1) [D:2.00; C:0.10]
+    206.5000: (MOVE-UP-FAST LIFT5 N10 N12) [D:11.00; C:44.00]
+    206.5000: (GET-ON LIFT4 P1 N10 N0 N1) [D:2.00; C:0.10]
+    208.5000: (GET-DOWN LIFT4 P1 N10 N1 N0) [D:2.00; C:0.10]
+    210.5000: (GET-ON LIFT4 P1 N10 N0 N1) [D:2.00; C:0.10]
+    212.5000: (GET-DOWN LIFT4 P1 N10 N1 N0) [D:2.00; C:0.10]
+    214.5000: (GET-ON LIFT4 P1 N10 N0 N1) [D:2.00; C:0.10]
+    216.5000: (GET-DOWN LIFT4 P1 N10 N1 N0) [D:2.00; C:0.10]
+    217.5000: (GET-DOWN LIFT5 P2 N12 N1 N0) [D:2.00; C:0.10]
+    218.5000: (GET-ON LIFT4 P1 N10 N0 N1) [D:2.00; C:0.10]
+    220.5000: (GET-DOWN LIFT4 P1 N10 N1 N0) [D:2.00; C:0.10]
+    222.5000: (GET-ON LIFT4 P1 N10 N0 N1) [D:2.00; C:0.10]
+    224.5000: (GET-DOWN LIFT4 P1 N10 N1 N0) [D:2.00; C:0.10]
+    226.5000: (GET-ON LIFT4 P1 N10 N0 N1) [D:2.00; C:0.10]
+    228.5000: (GET-DOWN LIFT4 P1 N10 N1 N0) [D:2.00; C:0.10]
+    230.5000: (GET-ON LIFT4 P1 N10 N0 N1) [D:2.00; C:0.10]
+    232.5000: (GET-DOWN LIFT4 P1 N10 N1 N0) [D:2.00; C:0.10]
+    234.5000: (GET-ON LIFT4 P1 N10 N0 N1) [D:2.00; C:0.10]
+    236.5000: (MOVE-UP-SLOW LIFT4 N10 N11) [D:12.00; C:24.00]
+    248.5000: (GET-DOWN LIFT4 P1 N11 N1 N0) [D:2.00; C:0.10]
+
+
+
+    METRIC_VALUE = 764.00
+    Solution number: 10
+    Total time:      64.00
+    Search time:     63.99
+    Actions:         58
+    Duration:        250.500
+    Plan quality:    764.000
+    Total Num Flips: 63119
+        Plan file:       plan_problem1.pddl_10.SOL
+
+3.2.B)OPTIC, RECURSOS RENOVABLES MINIMIZANDO TOTAL_ENERGY_USED
+    ; Plan found with metric 1516.000
+    ; Theoretical reachable cost 1516.000
+    ; States evaluated so far: 4702
+    ; States pruned based on pre-heuristic cost lower bound: 0
+    ; Time 11.34
+    0.000: (move-up-fast lift5 n0 n4)  [13.000]
+    0.000: (move-up-slow lift1 n0 n2)  [20.000]
+    0.000: (move-up-slow lift4 n9 n11)  [20.000]
+    22.001: (get-on lift5 p1 n4 n0 n1)  [2.000]
+    24.001: (get-on lift1 p0 n2 n0 n1)  [2.000]
+    24.001: (move-up-fast lift5 n4 n8)  [13.000]
+    24.002: (move-down-slow lift4 n11 n8)  [28.000]
+    26.001: (move-down-slow lift1 n2 n1)  [12.000]
+    37.001: (get-down lift5 p1 n8 n1 n0)  [2.000]
+    37.002: (recharge lift5 n8)  [26.000]
+    38.001: (get-down lift1 p0 n1 n1 n0)  [2.000]
+    39.002: (get-on lift5 p3 n8 n0 n1)  [2.000]
+    40.002: (get-on lift1 p4 n1 n0 n1)  [2.000]
+    42.003: (get-on lift1 p2 n1 n1 n2)  [2.000]
+    44.003: (move-up-slow lift1 n1 n2)  [12.000]
+    52.002: (get-on lift4 p1 n8 n0 n1)  [2.000]
+    52.003: (recharge lift4 n8)  [31.000]
+    56.003: (get-down lift1 p4 n2 n2 n1)  [2.000]
+    58.004: (get-down lift1 p2 n2 n1 n0)  [2.000]
+    60.004: (move-down-slow lift1 n2 n1)  [12.000]
+    63.003: (move-down-fast lift5 n8 n2)  [14.000]
+    72.004: (get-on lift1 p0 n1 n0 n1)  [2.000]
+    74.004: (move-up-slow lift1 n1 n2)  [12.000]
+    77.003: (get-down lift5 p3 n2 n1 n0)  [2.000]
+    79.004: (get-on lift5 p4 n2 n0 n1)  [2.000]
+    81.005: (get-on lift5 p2 n2 n1 n2)  [2.000]
+    83.004: (move-up-slow lift4 n8 n11)  [28.000]
+    83.005: (move-up-fast lift5 n2 n4)  [11.000]
+    86.004: (get-on lift1 p3 n2 n1 n2)  [2.000]
+    88.004: (move-down-slow lift1 n2 n1)  [12.000]
+    94.006: (recharge lift5 n4)  [26.500]
+    100.004: (get-down lift1 p3 n1 n2 n1)  [2.000]
+    102.004: (move-up-slow lift1 n1 n3)  [20.000]
+    111.004: (get-down lift4 p1 n11 n1 n0)  [2.000]
+    113.004: (move-up-slow lift4 n11 n12)  [12.000]
+    120.507: (move-up-fast lift5 n4 n12)  [17.000]
+    122.004: (get-down lift1 p0 n3 n1 n0)  [2.000]
+    137.507: (get-down lift5 p4 n12 n2 n1)  [2.000]
+    139.508: (get-down lift5 p2 n12 n1 n0)  [2.000]
+    139.508: (get-on lift4 p4 n12 n0 n1)  [2.000]
+    141.508: (move-down-slow lift4 n12 n11)  [12.000]
+    153.509: (move-down-slow lift4 n11 n9)  [20.000]
+    173.509: (get-down lift4 p4 n9 n1 n0)  [2.000]
+
+4) 
+    4.1.A) LPG, RECURSOS NO RENOVABLE MINIMIZANDO TIEMPO
+    Plan computed:
+    Time: (ACTION) [action Duration; action Cost]
+    0.0000: (MOVE-UP-SLOW LIFT3 N5 N8) [D:28.00; C:0.10]
+    0.0000: (MOVE-UP-SLOW LIFT4 N9 N10) [D:12.00; C:0.10]
+    0.0000: (MOVE-UP-SLOW LIFT1 N0 N1) [D:12.00; C:0.10]
+    12.0000: (GET-ON LIFT1 P4 N1 N0 N1) [D:2.00; C:0.10]
+    14.0000: (GET-ON LIFT1 P2 N1 N1 N2) [D:2.00; C:0.10]
+    16.0000: (MOVE-DOWN-SLOW LIFT1 N1 N0) [D:12.00; C:0.10]
+    28.0000: (GET-ON LIFT3 P3 N8 N0 N1) [D:2.00; C:0.10]
+    28.0000: (GET-DOWN LIFT1 P2 N0 N2 N1) [D:2.00; C:0.10]
+    30.0000: (MOVE-DOWN-SLOW LIFT3 N8 N4) [D:36.00; C:0.10]
+    30.0000: (GET-ON LIFT1 P2 N0 N1 N2) [D:2.00; C:0.10]
+    32.0000: (GET-DOWN LIFT1 P4 N0 N2 N1) [D:2.00; C:0.10]
+    34.0000: (GET-DOWN LIFT1 P2 N0 N1 N0) [D:2.00; C:0.10]
+    34.0000: (GET-ON LIFT5 P4 N0 N0 N1) [D:2.00; C:0.10]
+    36.0000: (MOVE-UP-SLOW LIFT1 N0 N2) [D:20.00; C:0.10]
+    36.0000: (GET-ON LIFT5 P2 N0 N1 N2) [D:2.00; C:0.10]
+    38.0000: (MOVE-UP-FAST LIFT5 N0 N10) [D:19.00; C:0.10]
+    56.0000: (GET-ON LIFT1 P0 N2 N0 N1) [D:2.00; C:0.10]
+    57.0000: (GET-DOWN LIFT5 P4 N10 N2 N1) [D:2.00; C:0.10]
+    58.0000: (MOVE-UP-SLOW LIFT1 N2 N3) [D:12.00; C:0.10]
+    59.0000: (GET-ON LIFT4 P4 N10 N0 N1) [D:2.00; C:0.10]
+    59.0000: (MOVE-UP-FAST LIFT5 N10 N12) [D:11.00; C:0.10]
+    61.0000: (MOVE-DOWN-SLOW LIFT4 N10 N9) [D:12.00; C:0.10]
+    66.0000: (GET-DOWN LIFT3 P3 N4 N1 N0) [D:2.00; C:0.10]
+    68.0000: (GET-ON LIFT3 P1 N4 N0 N1) [D:2.00; C:0.10]
+    70.0000: (GET-DOWN LIFT1 P0 N3 N1 N0) [D:2.00; C:0.10]
+    70.0000: (MOVE-UP-SLOW LIFT3 N4 N8) [D:36.00; C:0.10]
+    70.0000: (GET-DOWN LIFT5 P2 N12 N1 N0) [D:2.00; C:0.10]
+    72.0000: (MOVE-UP-SLOW LIFT1 N3 N4) [D:12.00; C:0.10]
+    73.0000: (GET-DOWN LIFT4 P4 N9 N1 N0) [D:2.00; C:0.10]
+    75.0000: (MOVE-DOWN-SLOW LIFT4 N9 N8) [D:12.00; C:0.10]
+    84.0000: (GET-ON LIFT1 P3 N4 N0 N1) [D:2.00; C:0.10]
+    86.0000: (MOVE-DOWN-SLOW LIFT1 N4 N1) [D:28.00; C:0.10]
+    106.0000: (GET-DOWN LIFT3 P1 N8 N1 N0) [D:2.00; C:0.10]
+    108.0000: (GET-ON LIFT4 P1 N8 N0 N1) [D:2.00; C:0.10]
+    110.0000: (MOVE-UP-SLOW LIFT4 N8 N11) [D:28.00; C:0.10]
+    114.0000: (GET-DOWN LIFT1 P3 N1 N1 N0) [D:2.00; C:0.10]
+    138.0000: (GET-DOWN LIFT4 P1 N11 N1 N0) [D:2.00; C:0.10]
+
+
+
+    METRIC_VALUE = 140.00
+    Solution number: 5
+    Total time:      14.00
+    Search time:     13.99
+    Actions:         37
+    Duration:        140.000
+    Plan quality:    140.000
+    Total Num Flips: 8677
+        Plan file:       plan_problem01.pddl_5.SOL
+        
+    4.1.B) OPTIC, RECURSOS NO RENOVABLE MINIMIZANDO TIEMPO
+    ; Plan found with metric 135.003
+    ; Theoretical reachable cost 135.005
+    ; States evaluated so far: 19489
+    ; States pruned based on pre-heuristic cost lower bound: 0
+    ; Time 33.59
+    0.000: (move-down-slow lift4 n9 n8)  [12.000]
+    0.000: (move-up-fast lift5 n0 n4)  [13.000]
+    0.000: (move-up-slow lift1 n0 n1)  [12.000]
+    0.000: (move-up-slow lift2 n5 n8)  [28.000]
+    0.000: (move-up-slow lift3 n5 n8)  [28.000]
+    12.000: (get-on lift4 p3 n8 n0 n1)  [2.000]
+    12.000: (get-on lift1 p4 n1 n0 n1)  [2.000]
+    13.000: (get-on lift5 p1 n4 n0 n1)  [2.000]
+    14.000: (move-up-slow lift4 n8 n12)  [36.000]
+    14.000: (move-up-slow lift1 n1 n2)  [12.000]
+    15.000: (move-down-fast lift5 n4 n0)  [12.000]
+    26.000: (get-down lift1 p4 n2 n1 n0)  [2.000]
+    27.001: (move-up-fast lift5 n0 n12)  [21.000]
+    28.001: (get-on lift1 p0 n2 n0 n1)  [2.000]
+    30.001: (move-up-slow lift1 n2 n3)  [12.000]
+    42.001: (get-down lift1 p0 n3 n1 n0)  [2.000]
+    44.001: (move-down-slow lift1 n3 n1)  [20.000]
+    48.001: (get-down lift5 p1 n12 n1 n0)  [2.000]
+    50.000: (get-down lift4 p3 n12 n1 n0)  [2.000]
+    52.001: (get-on lift4 p1 n12 n0 n1)  [2.000]
+    52.001: (get-on lift5 p3 n12 n0 n1)  [2.000]
+    54.001: (move-down-slow lift4 n12 n11)  [12.000]
+    54.001: (move-down-fast lift5 n12 n2)  [18.000]
+    64.001: (get-on lift1 p2 n1 n0 n1)  [2.000]
+    66.001: (get-down lift4 p1 n11 n1 n0)  [2.000]
+    66.001: (move-up-slow lift1 n1 n2)  [12.000]
+    68.001: (move-up-slow lift4 n11 n12)  [12.000]
+    72.001: (get-on lift5 p4 n2 n1 n2)  [2.000]
+    74.002: (get-down lift5 p3 n2 n2 n1)  [2.000]
+    78.001: (get-down lift1 p2 n2 n1 n0)  [2.000]
+    80.002: (get-on lift5 p2 n2 n1 n2)  [2.000]
+    82.002: (move-up-fast lift5 n2 n12)  [19.000]
+    101.002: (get-down lift5 p4 n12 n2 n1)  [2.000]
+    103.003: (get-on lift4 p4 n12 n0 n1)  [2.000]
+    105.003: (move-down-slow lift4 n12 n9)  [28.000]
+    119.003: (get-on lift1 p3 n2 n0 n1)  [2.000]
+    121.003: (move-down-slow lift1 n2 n1)  [12.000]
+    133.003: (get-down lift1 p3 n1 n1 n0)  [2.000]
+    133.003: (get-down lift5 p2 n12 n1 n0)  [2.000]
+    133.003: (get-down lift4 p4 n9 n1 n0)  [2.000]
+
+    * All goal deadlines now no later than 135.003
+
+    4.2.A) LPG, RECURSOs RENOVABLE MINIMIZANDO TIEMPO
+    Plan computed:
+    Time: (ACTION) [action Duration; action Cost]
+    0.0000: (MOVE-UP-SLOW LIFT1 N0 N1) [D:12.00; C:0.10]
+    0.0000: (MOVE-DOWN-SLOW LIFT4 N9 N8) [D:12.00; C:0.10]
+    0.0000: (MOVE-DOWN-SLOW LIFT2 N5 N4) [D:12.00; C:0.10]
+    0.0000: (MOVE-UP-FAST LIFT5 N0 N8) [D:17.00; C:0.10]
+    12.0000: (GET-ON LIFT1 P4 N1 N0 N1) [D:2.00; C:0.10]
+    12.0000: (GET-ON LIFT4 P3 N8 N0 N1) [D:2.00; C:0.10]
+    12.0000: (GET-ON LIFT2 P1 N4 N0 N1) [D:2.00; C:0.10]
+    14.0000: (GET-ON LIFT1 P2 N1 N1 N2) [D:2.00; C:0.10]
+    14.0000: (MOVE-UP-SLOW LIFT2 N4 N7) [D:28.00; C:0.10]
+    16.0000: (MOVE-UP-SLOW LIFT1 N1 N2) [D:12.00; C:0.10]
+    17.0000: (RECHARGE LIFT5 N8) [D:34.00; C:0.10]
+    28.0000: (GET-DOWN LIFT1 P2 N2 N2 N1) [D:2.00; C:0.10]
+    30.0000: (GET-ON LIFT1 P0 N2 N1 N2) [D:2.00; C:0.10]
+    32.0000: (GET-DOWN LIFT1 P4 N2 N2 N1) [D:2.00; C:0.10]
+    34.0000: (MOVE-UP-SLOW LIFT1 N2 N3) [D:12.00; C:0.10]
+    42.0000: (MOVE-UP-SLOW LIFT2 N7 N8) [D:12.00; C:0.10]
+    46.0000: (GET-DOWN LIFT1 P0 N3 N1 N0) [D:2.00; C:0.10]
+    48.0000: (MOVE-DOWN-SLOW LIFT1 N3 N2) [D:12.00; C:0.10]
+    54.0000: (GET-DOWN LIFT2 P1 N8 N1 N0) [D:2.00; C:0.10]
+    56.0000: (GET-ON LIFT4 P1 N8 N1 N2) [D:2.00; C:0.10]
+    58.0000: (GET-DOWN LIFT4 P3 N8 N2 N1) [D:2.00; C:0.10]
+    60.0000: (GET-ON LIFT5 P3 N8 N0 N1) [D:2.00; C:0.10]
+    60.0000: (MOVE-UP-SLOW LIFT4 N8 N9) [D:12.00; C:0.10]
+    62.0000: (MOVE-DOWN-FAST LIFT5 N8 N2) [D:14.00; C:0.10]
+    72.0000: (MOVE-UP-SLOW LIFT4 N9 N11) [D:20.00; C:0.10]
+    76.0000: (GET-DOWN LIFT5 P3 N2 N1 N0) [D:2.00; C:0.10]
+    76.0000: (RECHARGE LIFT5 N2) [D:21.00; C:0.10]
+    78.0000: (GET-ON LIFT5 P2 N2 N0 N1) [D:2.00; C:0.10]
+    78.0000: (GET-ON LIFT1 P3 N2 N0 N1) [D:2.00; C:0.10]
+    80.0000: (GET-ON LIFT5 P4 N2 N1 N2) [D:2.00; C:0.10]
+    80.0000: (MOVE-DOWN-SLOW LIFT1 N2 N1) [D:12.00; C:0.10]
+    92.0000: (GET-DOWN LIFT1 P3 N1 N1 N0) [D:2.00; C:0.10]
+    92.0000: (GET-DOWN LIFT4 P1 N11 N1 N0) [D:2.00; C:0.10]
+    94.0000: (MOVE-UP-SLOW LIFT4 N11 N12) [D:12.00; C:0.10]
+    97.0000: (MOVE-UP-FAST LIFT5 N2 N4) [D:11.00; C:0.10]
+    108.0000: (MOVE-UP-FAST LIFT5 N4 N10) [D:15.00; C:0.10]
+    123.0000: (MOVE-UP-FAST LIFT5 N10 N12) [D:11.00; C:0.10]
+    134.0000: (GET-DOWN LIFT5 P4 N12 N2 N1) [D:2.00; C:0.10]
+    136.0000: (GET-DOWN LIFT5 P2 N12 N1 N0) [D:2.00; C:0.10]
+    136.0000: (GET-ON LIFT4 P4 N12 N0 N1) [D:2.00; C:0.10]
+    138.0000: (MOVE-DOWN-SLOW LIFT4 N12 N10) [D:20.00; C:0.10]
+    158.0000: (MOVE-DOWN-SLOW LIFT4 N10 N9) [D:12.00; C:0.10]
+    170.0000: (GET-DOWN LIFT4 P4 N9 N1 N0) [D:2.00; C:0.10]
+
+    METRIC_VALUE = 172.00
+    Solution number: 10
+    Total time:      102.02
+    Search time:     102.01
+    Actions:         43
+    Duration:        172.000
+    Plan quality:    172.000
+    Total Num Flips: 64012
+        Plan file:       plan_problem11.pddl_10.SOL
+
+    4.2.B) OPTIC, RECURSOS RENOVABLE MINIMIZANDO TIEMPO

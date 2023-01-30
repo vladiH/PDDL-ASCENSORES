@@ -99,6 +99,4 @@
 )
 
 
-; ./lpg-td-1.0 -o domain.pddl -f problem.pddl -n 1 -out sol.txt   ;; fichero para la solución
-
-sudo apt-get install cmake coinor-libcbc-dev coinor-libclp-dev \coinor-libcoinutils-dev libbz2-dev bison flex
+; ./lpg -o domain.pddl -f problem.pddl -n 1 -out sol.txt

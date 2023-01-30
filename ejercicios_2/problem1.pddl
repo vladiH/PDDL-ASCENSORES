@@ -100,4 +100,4 @@
 )
 
 
-; ./lpg-td -o domain.pddl -f problem.pddl -n 1 -out sol.txt
+; ./lpg -o domain.pddl -f problem.pddl -n 1 -out sol.txt

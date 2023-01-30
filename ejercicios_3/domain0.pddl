@@ -7,7 +7,6 @@
 		  lift-slow lift-fast - lift)
   (:predicates 
     (next ?x - integer ?y - integer) 
-	(above ?x - integer ?y - integer)
 	(can-go ?x - lift ?y - integer)
 	(can-hold ?x - lift ?y  - integer)
 	(passenger-at ?x - passenger ?y - integer)
@@ -21,6 +20,8 @@
             (travel-fast ?f1 - integer ?f2 - integer) - number
 			(uncharge ?l - lift) - number 
 			(battery-level ?l - lift) - number
+			(floor ?f1 - integer) - number
+			(total-energy-used) - number
 			
   )
 
@@ -38,32 +39,46 @@
     	     (and (at start (not(boarded ?p ?l))) (at end (passenger-at ?p ?f))(at start (not (on-board ?l ?bn) )) (at end (on-board ?l ?an))))
    
    ;=========================================ascensor lento==================================
+
+	;Desc = CAPACIDAD - (Pisofin - PisoInit)*Tiempo*Uncharge
+
    (:durative-action move-up-slow
 	     :parameters (?l - lift-slow ?f1 - integer ?f2 - integer)
 		 :duration (= ?duration (travel-slow ?f1 ?f2))
-	     :condition (and (at start(lift-at ?l ?f1)) (at start(can-go ?l ?f2)) (at start(above ?f1 ?f2)) (at start (>= (battery-level ?l) (* (uncharge ?l) (travel-slow ?f1 ?f2)))))
+	     :condition (and (at start(lift-at ?l ?f1)) (at start(can-go ?l ?f2)) (at start(>(floor ?f2) (floor ?f1) )) (at start (>= (battery-level ?l) (* (- (floor ?f2)(floor ?f1))(* (uncharge ?l) (travel-slow ?f1 ?f2))))))
 	     :effect
-	     (and (at start (not (lift-at ?l ?f1))) (at end  (lift-at ?l ?f2)) (at end (decrease (battery-level ?l) (* (uncharge ?l) (travel-slow ?f1 ?f2)))) ))
+	     (and (at start (not (lift-at ?l ?f1))) (at end  (lift-at ?l ?f2)) (at end  (lift-at ?l ?f2))
+		  (at end (decrease (battery-level ?l) (* (- (floor ?f2)(floor ?f1))(* (uncharge ?l) (travel-slow ?f1 ?f2))))) 
+	      (at end (increase (total-energy-used) (* (- (floor ?f2)(floor ?f1))(* (uncharge ?l) (travel-slow ?f1 ?f2))))) 
+		  ))
 
     (:durative-action move-down-slow
     	        :parameters (?l - lift-slow ?f1 - integer ?f2 - integer)
 				:duration (= ?duration (travel-slow ?f2 ?f1))
-    	        :condition (and (at start(lift-at ?l ?f1)) (at start(can-go ?l ?f2)) (at start(above ?f2 ?f1)) (at start (>= (battery-level ?l) (* (uncharge ?l) (travel-slow ?f2 ?f1)))))
+    	        :condition (and (at start(lift-at ?l ?f1)) (at start(can-go ?l ?f2)) (at start(>(floor ?f1) (floor ?f2))) (at start (>= (battery-level ?l) (* (- (floor ?f1)(floor ?f2))(* (uncharge ?l) (travel-slow ?f2 ?f1))))))
     	        :effect
-	     (and (at start (not (lift-at ?l ?f1))) (at end (lift-at ?l ?f2)) (at end (decrease (battery-level ?l) (* (uncharge ?l) (travel-slow ?f2 ?f1))))))
+	     (and (at start (not (lift-at ?l ?f1))) (at end (lift-at ?l ?f2))
+		  (at end (decrease (battery-level ?l) (* (- (floor ?f1)(floor ?f2))(* (uncharge ?l) (travel-slow ?f2 ?f1)))))
+	      (at end (increase (total-energy-used) (* (- (floor ?f1)(floor ?f2))(* (uncharge ?l) (travel-slow ?f2 ?f1)))))
+	     ))
 
 	;=====================================ascensor rapido========================================
 	(:durative-action move-up-fast
 	     :parameters (?l - lift-fast ?f1 - integer ?f2 - integer)
 		 :duration (= ?duration (travel-fast ?f1 ?f2))
-	     :condition (and (at start(lift-at ?l ?f1)) (at start(can-go ?l ?f2)) (at start(above ?f1 ?f2)) (at start (>= (battery-level ?l) (* (uncharge ?l) (travel-fast ?f1 ?f2)))))
+	     :condition (and (at start(lift-at ?l ?f1)) (at start(can-go ?l ?f2)) (at start(>(floor ?f2) (floor ?f1) )) (at start (>= (battery-level ?l) (* (- (floor ?f2)(floor ?f1))(* (uncharge ?l) (travel-fast ?f1 ?f2))))))
 	     :effect
-	     (and (at start (not (lift-at ?l ?f1))) (at end  (lift-at ?l ?f2)) (at end (decrease (battery-level ?l) (* (uncharge ?l) (travel-fast ?f1 ?f2))))))
+	     (and (at start (not (lift-at ?l ?f1))) (at end  (lift-at ?l ?f2)) 
+	     (at end (decrease (battery-level ?l) (* (- (floor ?f2)(floor ?f1))(* (uncharge ?l) (travel-fast ?f1 ?f2)))))
+	     (at end (increase (total-energy-used) (* (- (floor ?f2)(floor ?f1))(* (uncharge ?l) (travel-fast ?f1 ?f2))))) 
+	     ))
 
-    (:durative-action move-down-fast
+    (:durative-action move-down-fast   
     	        :parameters (?l - lift-fast ?f1 - integer ?f2 - integer)
 				:duration (= ?duration (travel-fast ?f1 ?f2))
-    	        :condition (and (at start(lift-at ?l ?f1)) (at start(can-go ?l ?f2)) (at start(above ?f2 ?f1)) (at start (>= (battery-level ?l) (* (uncharge ?l) (travel-fast ?f1 ?f2)))))
-    	        :effect (and (at start (not (lift-at ?l ?f1))) (at end (lift-at ?l ?f2)) (at end (decrease (battery-level ?l) (* (uncharge ?l) (travel-fast ?f1 ?f2)))))
-	)
+    	        :condition (and (at start(lift-at ?l ?f1)) (at start(can-go ?l ?f2)) (at start(>(floor ?f1) (floor ?f2))) (at start (>= (battery-level ?l) (* (- (floor ?f1)(floor ?f2))(* (uncharge ?l) (travel-fast ?f1 ?f2))))))
+    	        :effect (and (at start (not (lift-at ?l ?f1))) (at end (lift-at ?l ?f2)) 
+    	        (at end (decrease (battery-level ?l) (* (- (floor ?f1)(floor ?f2))(* (uncharge ?l) (travel-fast ?f1 ?f2)))))
+    	        (at end (increase (total-energy-used) (* (- (floor ?f1)(floor ?f2))(* (uncharge ?l) (travel-fast ?f1 ?f2)))))
+    	        ))
 )    

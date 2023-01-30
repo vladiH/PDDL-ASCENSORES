@@ -100,4 +100,4 @@
 )
 
 
-; ./lpg-td-1.0 -o domain.pddl -f problem.pddl -n 1 -out sol.txt   ;; fichero para la solución
+; ./lpg -o domain.pddl -f problem.pddl -n 1 -out sol.txt

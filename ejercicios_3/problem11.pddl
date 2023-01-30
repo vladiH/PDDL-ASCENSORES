@@ -12,19 +12,9 @@
             ;=============================incremento=================================================
             (next n0 n1) (next n1 n2) (next n2 n3)
 
-            ;==========================distribucion de pisos===================================
-            (above n0 n1) (above n0 n2) (above n0 n3) (above n0 n4) (above n0 n5) (above n0 n6) (above n0 n7) (above n0 n8) (above n0 n9) (above n0 n10) (above n0 n11) (above n0 n12)
-            (above n1 n2) (above n1 n3) (above n1 n4) (above n1 n5) (above n1 n6) (above n1 n7) (above n1 n8) (above n1 n9) (above n1 n10) (above n1 n11) (above n1 n12) 
-            (above n2 n3) (above n2 n4) (above n2 n5) (above n2 n6) (above n2 n7) (above n2 n8) (above n2 n9) (above n2 n10) (above n2 n11) (above n2 n12) 
-            (above n3 n4) (above n3 n5) (above n3 n6) (above n3 n7) (above n3 n8) (above n3 n9) (above n3 n10) (above n3 n11) (above n3 n12) 
-            (above n4 n5) (above n4 n6) (above n4 n7) (above n4 n8) (above n4 n9) (above n4 n10) (above n4 n11) (above n4 n12) 
-            (above n5 n6) (above n5 n7) (above n5 n8) (above n5 n9) (above n5 n10) (above n5 n11) (above n5 n12) 
-            (above n6 n7) (above n6 n8) (above n6 n9) (above n6 n10) (above n6 n11) (above n6 n12) 
-            (above n7 n8) (above n7 n9) (above n7 n10) (above n7 n11) (above n7 n12) 
-            (above n8 n9) (above n8 n10) (above n8 n11) (above n8 n12) 
-            (above n9 n10) (above n9 n11) (above n9 n12) 
-            (above n10 n11) (above n10 n12) 
-            (above n11 n12) 
+            ;==========================valor de cada pisos===================================
+            (=(floor n0) 0) (=(floor n1) 1) (=(floor n2) 2) (=(floor n3) 3) (=(floor n4) 4) (=(floor n5) 5) (=(floor n6) 6)
+            (=(floor n7) 7) (=(floor n8) 8) (=(floor n9) 9) (=(floor n10) 10) (=(floor n11) 11) (=(floor n12) 12)
 
             ;============================tiempo necesario para alcanzar un piso realizado por el ascensor lento ==============
             (= (travel-slow n0 n1) 12) (= (travel-slow n0 n2) 20) (= (travel-slow n0 n3) 28) (= (travel-slow n0 n4) 36) 
@@ -56,10 +46,16 @@
             (= (travel-fast n2 n0) 10)
 
             ;============================ nivel de bateria asencores ==============
-            (= (battery-level lift1) 100) (= (battery-level lift2) 100) (= (battery-level lift3) 100) (= (battery-level lift4) 100) (= (battery-level lift5) 100)
+            (= (battery-level lift1) 300) (= (battery-level lift2) 300) (= (battery-level lift3) 300) (= (battery-level lift4) 300) (= (battery-level lift5) 300)
 
-            ;============================ uncharge voleres ==============
-            (= (uncharge lift1) 0.2 ) (= (uncharge lift2) 0.2 ) (= (uncharge lift3) 0.2 ) (= (uncharge lift4) 0.2 ) (= (uncharge lift5) 0.2 )
+            ;============================ capacidad bateria asencores ==============
+            (= (battery-capacity lift1) 300) (= (battery-capacity lift2) 300) (= (battery-capacity lift3) 300) (= (battery-capacity lift4) 300) (= (battery-capacity lift5) 300)
+
+            ;============================ uncharge valores ==============
+            (= (uncharge lift1) 2 ) (= (uncharge lift2) 2 ) (= (uncharge lift3) 2 ) (= (uncharge lift4) 2 ) (= (uncharge lift5) 2 )
+
+            ;============================ charge valores ==============
+            (= (charge lift1) 8 ) (= (charge lift2) 8 ) (= (charge lift3) 8 ) (= (charge lift4) 8 ) (= (charge lift5) 8 )
 
             ;=================== estados iniciales del ascensor 1 lento =========================
             (can-go lift1 n0) (can-go lift1 n1)  (can-go lift1 n2) (can-go lift1 n3) (can-go lift1 n4); a que pisos puede ir?
@@ -96,15 +92,21 @@
             (passenger-at p2 n1)
             (passenger-at p3 n8)
             (passenger-at p4 n1)
+
+            ;=================== donde estan los cargadores =========================
+            (have-charger n4) (have-charger n8) (have-charger n6) (have-charger n2) (have-charger n10)
+
+            (= (total-energy-used) 0)
         )
     (:goal (and 
             (passenger-at p0 n3) (passenger-at p1 n11) (passenger-at p2 n12) (passenger-at p3 n1) (passenger-at p4 n9)
         )
     )
+    ; (:metric minimize (total-time))
     (:metric minimize (total-time))
 )
 
 
-; ./lpg-td-1.0 -o domain.pddl -f problem.pddl -n 1 -out sol.txt   ;; fichero para la solución
+; ./lpg -o domain.pddl -f problem.pddl -n 5 -out sol.txt   ;; fichero para la solución
 
 ; sudo apt-get install cmake coinor-libcbc-dev coinor-libclp-dev \coinor-libcoinutils-dev libbz2-dev bison flex
