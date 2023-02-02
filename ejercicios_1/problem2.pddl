@@ -1,4 +1,4 @@
-;cambio de posiciones inicial y final
+;cambio de la posicion inicial del pasajero y los objetivos
 (define 
     (problem LIFT-PROBLEM)
     (:domain LIFT)

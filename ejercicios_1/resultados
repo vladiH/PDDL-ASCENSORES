@@ -1,0 +1,1020 @@
+1)PLANIFICADOR FF
+    1.A)PROBLEMA INICIAL
+    
+    ff: found legal plan as follows
+step    0: MOVE-UP LIFT5 N0 N8
+        1: MOVE-DOWN LIFT2 N5 N4
+        2: MOVE-UP LIFT1 N0 N1
+        3: GET-ON LIFT1 P4 N1 N0 N1
+        4: GET-ON LIFT1 P2 N1 N1 N2
+        5: MOVE-UP LIFT1 N1 N2
+        6: GET-DOWN LIFT1 P4 N2 N2 N1
+        7: GET-ON LIFT2 P1 N4 N0 N1
+        8: GET-ON LIFT5 P3 N8 N0 N1
+        9: MOVE-DOWN LIFT5 N8 N2
+       10: MOVE-UP LIFT2 N4 N8
+       11: GET-ON LIFT5 P4 N2 N1 N2
+       12: GET-DOWN LIFT2 P1 N8 N1 N0
+       13: GET-DOWN LIFT5 P3 N2 N2 N1
+       14: MOVE-UP LIFT5 N2 N8
+       15: GET-DOWN LIFT1 P2 N2 N1 N0
+       16: GET-ON LIFT1 P3 N2 N0 N1
+       17: GET-DOWN LIFT5 P4 N8 N1 N0
+       18: MOVE-DOWN LIFT5 N8 N2
+       19: GET-ON LIFT1 P0 N2 N1 N2
+       20: MOVE-UP LIFT1 N2 N3
+       21: GET-ON LIFT5 P2 N2 N0 N1
+       22: MOVE-UP LIFT5 N2 N12
+       23: GET-DOWN LIFT5 P2 N12 N1 N0
+       24: MOVE-DOWN LIFT4 N9 N8
+       25: GET-ON LIFT4 P1 N8 N0 N1
+       26: GET-ON LIFT4 P4 N8 N1 N2
+       27: MOVE-UP LIFT4 N8 N11
+       28: MOVE-DOWN LIFT1 N3 N1
+       29: GET-DOWN LIFT1 P3 N1 N2 N1
+       30: MOVE-UP LIFT1 N1 N3
+       31: GET-DOWN LIFT1 P0 N3 N1 N0
+       32: GET-DOWN LIFT4 P1 N11 N2 N1
+       33: MOVE-DOWN LIFT4 N11 N9
+       34: GET-DOWN LIFT4 P4 N9 N1 N0
+
+time spent:    0.00 seconds instantiating 2820 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 133 facts and 732 actions
+               0.00 seconds creating final representation with 133 relevant facts, 0 relevant fluents
+               0.00 seconds computing LNF
+               0.00 seconds building connectivity graph
+               0.02 seconds searching, evaluating 153 states, to a max depth of 2
+               0.02 seconds total time
+
+    1.B) CAMBIO DEL ESTADO INICIAL DE LOS PASAJEROS
+
+    ff: found legal plan as follows
+step    0: MOVE-UP LIFT1 N0 N3
+        1: GET-ON LIFT5 P4 N0 N0 N1
+        2: GET-ON LIFT1 P3 N3 N0 N1
+        3: GET-ON LIFT4 P0 N9 N0 N1
+        4: MOVE-UP LIFT4 N9 N12
+        5: MOVE-UP LIFT5 N0 N4
+        6: GET-ON LIFT4 P1 N12 N1 N2
+        7: MOVE-DOWN LIFT4 N12 N8
+        8: GET-ON LIFT5 P2 N4 N1 N2
+        9: MOVE-UP LIFT5 N4 N8
+       10: MOVE-DOWN LIFT1 N3 N1
+       11: GET-DOWN LIFT4 P0 N8 N2 N1
+       12: GET-DOWN LIFT5 P4 N8 N2 N1
+       13: GET-ON LIFT5 P0 N8 N1 N2
+       14: MOVE-DOWN LIFT5 N8 N0
+       15: MOVE-UP LIFT5 N0 N12
+       16: GET-ON LIFT4 P4 N8 N1 N2
+       17: MOVE-UP LIFT4 N8 N11
+       18: GET-DOWN LIFT4 P1 N11 N2 N1
+       19: MOVE-DOWN LIFT4 N11 N9
+       20: GET-DOWN LIFT4 P4 N9 N1 N0
+       21: GET-DOWN LIFT5 P2 N12 N2 N1
+       22: MOVE-DOWN LIFT5 N12 N0
+       23: GET-DOWN LIFT5 P0 N0 N1 N0
+       24: MOVE-DOWN LIFT1 N1 N0
+       25: GET-ON LIFT1 P0 N0 N1 N2
+       26: MOVE-UP LIFT1 N0 N3
+       27: GET-DOWN LIFT1 P0 N3 N2 N1
+       28: MOVE-DOWN LIFT1 N3 N1
+       29: GET-DOWN LIFT1 P3 N1 N1 N0
+
+time spent:    0.00 seconds instantiating 2820 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 133 facts and 732 actions
+               0.00 seconds creating final representation with 133 relevant facts, 0 relevant fluents
+               0.00 seconds computing LNF
+               0.00 seconds building connectivity graph
+               0.02 seconds searching, evaluating 188 states, to a max depth of 2
+               0.02 seconds total time
+    
+    1.C) CAMBIO DEL ESTADO INICIAL DE LOS PASAJEROS Y EL OBJETIVO
+
+    ff: found legal plan as follows
+step    0: MOVE-UP LIFT1 N0 N3
+        1: GET-ON LIFT1 P3 N3 N0 N1
+        2: MOVE-DOWN LIFT1 N3 N0
+        3: GET-DOWN LIFT1 P3 N0 N1 N0
+        4: GET-ON LIFT5 P3 N0 N0 N1
+        5: GET-ON LIFT4 P0 N9 N0 N1
+        6: MOVE-DOWN LIFT4 N9 N8
+        7: MOVE-UP LIFT5 N0 N8
+        8: GET-DOWN LIFT5 P3 N8 N1 N0
+        9: GET-DOWN LIFT4 P0 N8 N1 N0
+       10: GET-ON LIFT4 P3 N8 N0 N1
+       11: GET-ON LIFT5 P0 N8 N0 N1
+       12: MOVE-DOWN LIFT5 N8 N4
+       13: MOVE-DOWN LIFT5 N4 N0
+       14: MOVE-UP LIFT4 N8 N11
+       15: GET-ON LIFT5 P4 N0 N1 N2
+       16: GET-DOWN LIFT4 P3 N11 N1 N0
+       17: GET-DOWN LIFT5 P0 N0 N2 N1
+       18: MOVE-UP LIFT5 N0 N4
+       19: GET-ON LIFT5 P2 N4 N1 N2
+       20: MOVE-UP LIFT5 N4 N12
+       21: GET-ON LIFT5 P1 N12 N2 N3
+       22: GET-DOWN LIFT5 P4 N12 N3 N2
+       23: GET-DOWN LIFT5 P2 N12 N2 N1
+       24: MOVE-DOWN LIFT5 N12 N2
+       25: GET-DOWN LIFT5 P1 N2 N1 N0
+
+time spent:    0.00 seconds instantiating 2820 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 133 facts and 732 actions
+               0.00 seconds creating final representation with 133 relevant facts, 0 relevant fluents
+               0.00 seconds computing LNF
+               0.00 seconds building connectivity graph
+               0.01 seconds searching, evaluating 82 states, to a max depth of 2
+               0.01 seconds total time
+
+    1.D)INCREMENTO DE PASAJEROS
+
+    ff: found legal plan as follows
+step    0: MOVE-UP LIFT5 N0 N8
+        1: MOVE-UP LIFT2 N5 N7
+        2: GET-ON LIFT2 P7 N7 N0 N1
+        3: MOVE-DOWN LIFT2 N7 N4
+        4: MOVE-UP LIFT1 N0 N4
+        5: MOVE-DOWN LIFT1 N4 N1
+        6: GET-ON LIFT1 P4 N1 N0 N1
+        7: GET-ON LIFT1 P2 N1 N1 N2
+        8: MOVE-UP LIFT1 N1 N2
+        9: GET-DOWN LIFT1 P4 N2 N2 N1
+       10: GET-ON LIFT2 P1 N4 N1 N2
+       11: MOVE-UP LIFT2 N4 N8
+       12: GET-DOWN LIFT2 P7 N8 N2 N1
+       13: GET-ON LIFT5 P3 N8 N0 N1
+       14: GET-ON LIFT5 P7 N8 N1 N2
+       15: GET-DOWN LIFT2 P1 N8 N1 N0
+       16: MOVE-DOWN LIFT4 N9 N8
+       17: MOVE-DOWN LIFT5 N8 N2
+       18: GET-ON LIFT5 P4 N2 N2 N3
+       19: GET-DOWN LIFT1 P2 N2 N1 N0
+       20: GET-DOWN LIFT5 P3 N2 N3 N2
+       21: MOVE-UP LIFT5 N2 N8
+       22: GET-DOWN LIFT5 P4 N8 N2 N1
+       23: MOVE-DOWN LIFT5 N8 N2
+       24: GET-ON LIFT4 P1 N8 N0 N1
+       25: GET-ON LIFT5 P2 N2 N1 N2
+       26: GET-ON LIFT4 P4 N8 N1 N2
+       27: MOVE-UP LIFT4 N8 N11
+       28: MOVE-DOWN LIFT5 N2 N0
+       29: GET-ON LIFT1 P0 N2 N0 N1
+       30: MOVE-DOWN LIFT1 N2 N1
+       31: GET-ON LIFT1 P6 N1 N1 N2
+       32: MOVE-UP LIFT1 N1 N3
+       33: MOVE-DOWN LIFT1 N3 N2
+       34: GET-DOWN LIFT1 P6 N2 N2 N1
+       35: GET-DOWN LIFT5 P7 N0 N2 N1
+       36: MOVE-UP LIFT5 N0 N2
+       37: GET-ON LIFT1 P3 N2 N1 N2
+       38: MOVE-UP LIFT1 N2 N3
+       39: GET-ON LIFT5 P6 N2 N1 N2
+       40: MOVE-UP LIFT5 N2 N12
+       41: GET-DOWN LIFT5 P2 N12 N2 N1
+       42: GET-DOWN LIFT5 P6 N12 N1 N0
+       43: MOVE-DOWN LIFT1 N3 N1
+       44: GET-DOWN LIFT1 P3 N1 N2 N1
+       45: MOVE-UP LIFT1 N1 N3
+       46: GET-DOWN LIFT1 P0 N3 N1 N0
+       47: GET-DOWN LIFT4 P1 N11 N2 N1
+       48: MOVE-DOWN LIFT4 N11 N9
+       49: GET-DOWN LIFT4 P4 N9 N1 N0
+
+time spent:    0.00 seconds instantiating 3652 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 169 facts and 976 actions
+               0.00 seconds creating final representation with 169 relevant facts, 0 relevant fluents
+               0.01 seconds computing LNF
+               0.00 seconds building connectivity graph
+               0.02 seconds searching, evaluating 237 states, to a max depth of 2
+               0.03 seconds total time
+
+    1.E)NUEVO ASCENSOR LENTO N6 Y ASCENSOR RAPIDO N7
+
+    ff: found legal plan as follows
+step    0: MOVE-UP LIFT5 N0 N8
+        1: MOVE-DOWN LIFT4 N9 N8
+        2: MOVE-DOWN LIFT7 N12 N0
+        3: MOVE-UP LIFT1 N0 N1
+        4: GET-ON LIFT5 P3 N8 N0 N1
+        5: MOVE-UP LIFT2 N5 N8
+        6: MOVE-DOWN LIFT2 N8 N4
+        7: MOVE-DOWN LIFT5 N8 N0
+        8: GET-ON LIFT2 P1 N4 N0 N1
+        9: MOVE-UP LIFT2 N4 N8
+       10: GET-DOWN LIFT2 P1 N8 N1 N0
+       11: GET-ON LIFT4 P1 N8 N0 N1
+       12: MOVE-UP LIFT4 N8 N11
+       13: GET-DOWN LIFT4 P1 N11 N1 N0
+       14: GET-ON LIFT1 P2 N1 N0 N1
+       15: GET-ON LIFT1 P4 N1 N1 N2
+       16: MOVE-UP LIFT1 N1 N2
+       17: GET-DOWN LIFT1 P2 N2 N2 N1
+       18: MOVE-UP LIFT5 N0 N2
+       19: MOVE-DOWN LIFT1 N2 N0
+       20: GET-DOWN LIFT5 P3 N2 N1 N0
+       21: GET-ON LIFT5 P2 N2 N0 N1
+       22: MOVE-UP LIFT5 N2 N12
+       23: GET-DOWN LIFT5 P2 N12 N1 N0
+       24: GET-DOWN LIFT1 P4 N0 N1 N0
+       25: MOVE-UP LIFT1 N0 N2
+       26: GET-ON LIFT1 P0 N2 N0 N1
+       27: GET-ON LIFT7 P4 N0 N0 N1
+       28: MOVE-UP LIFT7 N0 N9
+       29: GET-DOWN LIFT7 P4 N9 N1 N0
+       30: GET-ON LIFT1 P3 N2 N1 N2
+       31: MOVE-UP LIFT1 N2 N3
+       32: MOVE-DOWN LIFT1 N3 N1
+       33: GET-DOWN LIFT1 P3 N1 N2 N1
+       34: MOVE-UP LIFT1 N1 N3
+       35: GET-DOWN LIFT1 P0 N3 N1 N0
+
+time spent:    0.00 seconds instantiating 3798 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 160 facts and 1022 actions
+               0.00 seconds creating final representation with 160 relevant facts, 0 relevant fluents
+               0.00 seconds computing LNF
+               0.00 seconds building connectivity graph
+               0.03 seconds searching, evaluating 185 states, to a max depth of 2
+               0.03 seconds total time
+
+2) PLANIFICADOR LPG SIN TIMESTEPS
+    2.A)
+    Plan computed:
+    Time: (ACTION) [action Duration; action Cost]
+    0.0000: (MOVE-UP LIFT1 N0 N1) [D:1.00; C:1.00]
+    0.0000: (MOVE-UP LIFT2 N5 N8) [D:1.00; C:1.00]
+    0.0000: (MOVE-DOWN LIFT4 N9 N8) [D:1.00; C:1.00]
+    1.0000: (GET-ON LIFT1 P2 N1 N0 N1) [D:1.00; C:1.00]
+    1.0000: (GET-ON LIFT2 P3 N8 N0 N1) [D:1.00; C:1.00]
+    2.0000: (MOVE-DOWN LIFT1 N1 N0) [D:1.00; C:1.00]
+    2.0000: (MOVE-DOWN LIFT2 N8 N4) [D:1.00; C:1.00]
+    3.0000: (GET-DOWN LIFT1 P2 N0 N1 N0) [D:1.00; C:1.00]
+    3.0000: (GET-DOWN LIFT2 P3 N4 N1 N0) [D:1.00; C:1.00]
+    4.0000: (GET-ON LIFT5 P2 N0 N0 N1) [D:1.00; C:1.00]
+    4.0000: (MOVE-UP LIFT1 N0 N2) [D:1.00; C:1.00]
+    5.0000: (GET-ON LIFT1 P0 N2 N0 N1) [D:1.00; C:1.00]
+    5.0000: (MOVE-UP LIFT5 N0 N12) [D:1.00; C:1.00]
+    6.0000: (MOVE-UP LIFT1 N2 N3) [D:1.00; C:1.00]
+    6.0000: (GET-DOWN LIFT5 P2 N12 N1 N0) [D:1.00; C:1.00]
+    7.0000: (GET-DOWN LIFT1 P0 N3 N1 N0) [D:1.00; C:1.00]
+    7.0000: (MOVE-DOWN LIFT5 N12 N4) [D:1.00; C:1.00]
+    8.0000: (MOVE-UP LIFT1 N3 N4) [D:1.00; C:1.00]
+    8.0000: (GET-ON LIFT5 P1 N4 N0 N1) [D:1.00; C:1.00]
+    9.0000: (GET-ON LIFT1 P3 N4 N0 N1) [D:1.00; C:1.00]
+    9.0000: (MOVE-UP LIFT5 N4 N12) [D:1.00; C:1.00]
+    10.0000: (MOVE-DOWN LIFT1 N4 N1) [D:1.00; C:1.00]
+    10.0000: (GET-DOWN LIFT5 P1 N12 N1 N0) [D:1.00; C:1.00]
+    11.0000: (GET-DOWN LIFT1 P3 N1 N1 N0) [D:1.00; C:1.00]
+    12.0000: (GET-ON LIFT1 P4 N1 N0 N1) [D:1.00; C:1.00]
+    13.0000: (MOVE-UP LIFT1 N1 N2) [D:1.00; C:1.00]
+    14.0000: (MOVE-UP LIFT1 N2 N4) [D:1.00; C:1.00]
+    15.0000: (GET-DOWN LIFT1 P4 N4 N1 N0) [D:1.00; C:1.00]
+    16.0000: (GET-ON LIFT2 P4 N4 N0 N1) [D:1.00; C:1.00]
+    17.0000: (MOVE-UP LIFT2 N4 N5) [D:1.00; C:1.00]
+    18.0000: (MOVE-UP LIFT2 N5 N8) [D:1.00; C:1.00]
+    19.0000: (GET-DOWN LIFT2 P4 N8 N1 N0) [D:1.00; C:1.00]
+    20.0000: (GET-ON LIFT4 P4 N8 N0 N1) [D:1.00; C:1.00]
+    21.0000: (MOVE-UP LIFT4 N8 N9) [D:1.00; C:1.00]
+    22.0000: (GET-DOWN LIFT4 P4 N9 N1 N0) [D:1.00; C:1.00]
+    23.0000: (MOVE-UP LIFT4 N9 N12) [D:1.00; C:1.00]
+    24.0000: (GET-ON LIFT4 P1 N12 N0 N1) [D:1.00; C:1.00]
+    25.0000: (MOVE-DOWN LIFT4 N12 N11) [D:1.00; C:1.00]
+    26.0000: (GET-DOWN LIFT4 P1 N11 N1 N0) [D:1.00; C:1.00]
+
+
+    Solution number: 3
+    Total time:      11.65
+    Search time:     11.64
+    Actions:         39
+    Duration:        27.000
+    Plan quality:    39.000
+    Total Num Flips: 9775
+        Plan file:       plan_problem.pddl_3.SOL
+    2.B)
+    Plan computed:
+    Time: (ACTION) [action Duration; action Cost]
+    0.0000: (MOVE-DOWN LIFT4 N9 N8) [D:1.00; C:1.00]
+    0.0000: (GET-ON LIFT5 P4 N0 N0 N1) [D:1.00; C:1.00]
+    0.0000: (MOVE-UP LIFT1 N0 N3) [D:1.00; C:1.00]
+    1.0000: (MOVE-UP LIFT5 N0 N4) [D:1.00; C:1.00]
+    1.0000: (GET-ON LIFT1 P3 N3 N0 N1) [D:1.00; C:1.00]
+    2.0000: (MOVE-UP LIFT5 N4 N8) [D:1.00; C:1.00]
+    2.0000: (MOVE-DOWN LIFT1 N3 N1) [D:1.00; C:1.00]
+    3.0000: (GET-DOWN LIFT5 P4 N8 N1 N0) [D:1.00; C:1.00]
+    3.0000: (GET-DOWN LIFT1 P3 N1 N1 N0) [D:1.00; C:1.00]
+    4.0000: (GET-ON LIFT4 P4 N8 N0 N1) [D:1.00; C:1.00]
+    4.0000: (MOVE-UP LIFT1 N1 N4) [D:1.00; C:1.00]
+    5.0000: (MOVE-UP LIFT4 N8 N9) [D:1.00; C:1.00]
+    6.0000: (GET-DOWN LIFT4 P4 N9 N1 N0) [D:1.00; C:1.00]
+    7.0000: (MOVE-UP LIFT4 N9 N12) [D:1.00; C:1.00]
+    8.0000: (GET-ON LIFT4 P1 N12 N0 N1) [D:1.00; C:1.00]
+    9.0000: (MOVE-DOWN LIFT4 N12 N11) [D:1.00; C:1.00]
+    10.0000: (GET-DOWN LIFT4 P1 N11 N1 N0) [D:1.00; C:1.00]
+    11.0000: (MOVE-DOWN LIFT4 N11 N9) [D:1.00; C:1.00]
+    12.0000: (GET-ON LIFT4 P0 N9 N0 N1) [D:1.00; C:1.00]
+    13.0000: (MOVE-DOWN LIFT4 N9 N8) [D:1.00; C:1.00]
+    14.0000: (GET-DOWN LIFT4 P0 N8 N1 N0) [D:1.00; C:1.00]
+    15.0000: (GET-ON LIFT5 P0 N8 N0 N1) [D:1.00; C:1.00]
+    16.0000: (MOVE-UP LIFT5 N8 N12) [D:1.00; C:1.00]
+    17.0000: (MOVE-DOWN LIFT5 N12 N4) [D:1.00; C:1.00]
+    18.0000: (GET-DOWN LIFT5 P0 N4 N1 N0) [D:1.00; C:1.00]
+    19.0000: (GET-ON LIFT1 P0 N4 N0 N1) [D:1.00; C:1.00]
+    19.0000: (GET-ON LIFT5 P2 N4 N0 N1) [D:1.00; C:1.00]
+    20.0000: (MOVE-DOWN LIFT1 N4 N3) [D:1.00; C:1.00]
+    20.0000: (MOVE-DOWN LIFT5 N4 N2) [D:1.00; C:1.00]
+    21.0000: (GET-DOWN LIFT1 P0 N3 N1 N0) [D:1.00; C:1.00]
+    21.0000: (MOVE-UP LIFT5 N2 N12) [D:1.00; C:1.00]
+    22.0000: (GET-DOWN LIFT5 P2 N12 N1 N0) [D:1.00; C:1.00]
+
+
+    Solution number: 3
+    Total time:      0.10
+    Search time:     0.10
+    Actions:         32
+    Duration:        23.000
+    Plan quality:    32.000
+    Total Num Flips: 222
+        Plan file:       plan_problem1.pddl_3.SOL
+
+    2.C)
+    Plan computed:
+    Time: (ACTION) [action Duration; action Cost]
+    0.0000: (MOVE-UP LIFT5 N0 N2) [D:1.00; C:1.00]
+    0.0000: (MOVE-UP LIFT1 N0 N3) [D:1.00; C:1.00]
+    0.0000: (GET-ON LIFT4 P0 N9 N0 N1) [D:1.00; C:1.00]
+    1.0000: (GET-ON LIFT1 P3 N3 N0 N1) [D:1.00; C:1.00]
+    1.0000: (MOVE-DOWN LIFT4 N9 N8) [D:1.00; C:1.00]
+    2.0000: (MOVE-DOWN LIFT1 N3 N2) [D:1.00; C:1.00]
+    2.0000: (GET-DOWN LIFT4 P0 N8 N1 N0) [D:1.00; C:1.00]
+    3.0000: (GET-DOWN LIFT1 P3 N2 N1 N0) [D:1.00; C:1.00]
+    3.0000: (MOVE-UP LIFT4 N8 N9) [D:1.00; C:1.00]
+    4.0000: (GET-ON LIFT5 P3 N2 N0 N1) [D:1.00; C:1.00]
+    4.0000: (MOVE-UP LIFT4 N9 N12) [D:1.00; C:1.00]
+    5.0000: (MOVE-UP LIFT5 N2 N12) [D:1.00; C:1.00]
+    6.0000: (GET-DOWN LIFT5 P3 N12 N1 N0) [D:1.00; C:1.00]
+    7.0000: (MOVE-DOWN LIFT5 N12 N8) [D:1.00; C:1.00]
+    8.0000: (GET-ON LIFT5 P0 N8 N0 N1) [D:1.00; C:1.00]
+    9.0000: (GET-DOWN LIFT5 P0 N8 N1 N0) [D:1.00; C:1.00]
+    10.0000: (GET-ON LIFT5 P0 N8 N0 N1) [D:1.00; C:1.00]
+    11.0000: (MOVE-UP LIFT5 N8 N12) [D:1.00; C:1.00]
+    12.0000: (GET-DOWN LIFT5 P0 N12 N1 N0) [D:1.00; C:1.00]
+    13.0000: (GET-ON LIFT5 P3 N12 N0 N1) [D:1.00; C:1.00]
+    14.0000: (GET-ON LIFT5 P1 N12 N1 N2) [D:1.00; C:1.00]
+    15.0000: (GET-DOWN LIFT5 P3 N12 N2 N1) [D:1.00; C:1.00]
+    16.0000: (GET-ON LIFT4 P3 N12 N0 N1) [D:1.00; C:1.00]
+    16.0000: (GET-ON LIFT5 P0 N12 N1 N2) [D:1.00; C:1.00]
+    17.0000: (MOVE-DOWN LIFT4 N12 N11) [D:1.00; C:1.00]
+    17.0000: (MOVE-DOWN LIFT5 N12 N0) [D:1.00; C:1.00]
+    18.0000: (GET-DOWN LIFT4 P3 N11 N1 N0) [D:1.00; C:1.00]
+    18.0000: (GET-ON LIFT5 P4 N0 N2 N3) [D:1.00; C:1.00]
+    19.0000: (MOVE-UP LIFT5 N0 N12) [D:1.00; C:1.00]
+    20.0000: (GET-DOWN LIFT5 P4 N12 N3 N2) [D:1.00; C:1.00]
+    21.0000: (MOVE-DOWN LIFT5 N12 N0) [D:1.00; C:1.00]
+    22.0000: (GET-DOWN LIFT5 P1 N0 N2 N1) [D:1.00; C:1.00]
+    23.0000: (GET-DOWN LIFT5 P0 N0 N1 N0) [D:1.00; C:1.00]
+    24.0000: (GET-ON LIFT5 P1 N0 N0 N1) [D:1.00; C:1.00]
+    25.0000: (MOVE-UP LIFT5 N0 N4) [D:1.00; C:1.00]
+    26.0000: (GET-ON LIFT5 P2 N4 N1 N2) [D:1.00; C:1.00]
+    27.0000: (MOVE-UP LIFT5 N4 N12) [D:1.00; C:1.00]
+    28.0000: (GET-DOWN LIFT5 P2 N12 N2 N1) [D:1.00; C:1.00]
+    29.0000: (MOVE-DOWN LIFT5 N12 N2) [D:1.00; C:1.00]
+    30.0000: (GET-DOWN LIFT5 P1 N2 N1 N0) [D:1.00; C:1.00]
+
+
+    Solution number: 3
+    Total time:      2.34
+    Search time:     2.32
+    Actions:         40
+    Duration:        31.000
+    Plan quality:    40.000
+    Total Num Flips: 2710
+        Plan file:       plan_problem2.pddl_3.SOL
+    
+    2.D)
+    Plan computed:
+    Time: (ACTION) [action Duration; action Cost]
+    0.0000: (MOVE-UP LIFT1 N0 N1) [D:1.00; C:1.00]
+    0.0000: (MOVE-UP LIFT5 N0 N4) [D:1.00; C:1.00]
+    0.0000: (MOVE-UP LIFT3 N5 N8) [D:1.00; C:1.00]
+    0.0000: (MOVE-DOWN LIFT4 N9 N8) [D:1.00; C:1.00]
+    0.0000: (MOVE-UP LIFT2 N5 N8) [D:1.00; C:1.00]
+    1.0000: (GET-ON LIFT1 P4 N1 N0 N1) [D:1.00; C:1.00]
+    1.0000: (GET-ON LIFT3 P3 N8 N0 N1) [D:1.00; C:1.00]
+    1.0000: (MOVE-DOWN LIFT2 N8 N4) [D:1.00; C:1.00]
+    2.0000: (MOVE-UP LIFT1 N1 N4) [D:1.00; C:1.00]
+    2.0000: (MOVE-DOWN LIFT3 N8 N4) [D:1.00; C:1.00]
+    2.0000: (GET-ON LIFT2 P1 N4 N0 N1) [D:1.00; C:1.00]
+    3.0000: (GET-DOWN LIFT1 P4 N4 N1 N0) [D:1.00; C:1.00]
+    3.0000: (GET-DOWN LIFT3 P3 N4 N1 N0) [D:1.00; C:1.00]
+    3.0000: (MOVE-UP LIFT2 N4 N8) [D:1.00; C:1.00]
+    4.0000: (GET-ON LIFT5 P4 N4 N0 N1) [D:1.00; C:1.00]
+    4.0000: (GET-ON LIFT1 P3 N4 N0 N1) [D:1.00; C:1.00]
+    4.0000: (MOVE-UP LIFT3 N4 N7) [D:1.00; C:1.00]
+    4.0000: (GET-DOWN LIFT2 P1 N8 N1 N0) [D:1.00; C:1.00]
+    5.0000: (GET-ON LIFT3 P7 N7 N0 N1) [D:1.00; C:1.00]
+    5.0000: (MOVE-DOWN LIFT5 N4 N0) [D:1.00; C:1.00]
+    5.0000: (GET-ON LIFT4 P1 N8 N0 N1) [D:1.00; C:1.00]
+    6.0000: (MOVE-DOWN LIFT3 N7 N4) [D:1.00; C:1.00]
+    6.0000: (MOVE-UP LIFT4 N8 N11) [D:1.00; C:1.00]
+    7.0000: (GET-DOWN LIFT3 P7 N4 N1 N0) [D:1.00; C:1.00]
+    7.0000: (GET-DOWN LIFT4 P1 N11 N1 N0) [D:1.00; C:1.00]
+    8.0000: (GET-ON LIFT1 P7 N4 N1 N2) [D:1.00; C:1.00]
+    8.0000: (MOVE-UP LIFT4 N11 N12) [D:1.00; C:1.00]
+    9.0000: (GET-DOWN LIFT1 P3 N4 N2 N1) [D:1.00; C:1.00]
+    10.0000: (GET-ON LIFT1 P3 N4 N1 N2) [D:1.00; C:1.00]
+    11.0000: (MOVE-DOWN LIFT1 N4 N1) [D:1.00; C:1.00]
+    12.0000: (GET-DOWN LIFT1 P7 N1 N2 N1) [D:1.00; C:1.00]
+    13.0000: (GET-DOWN LIFT1 P3 N1 N1 N0) [D:1.00; C:1.00]
+    14.0000: (GET-ON LIFT1 P2 N1 N0 N1) [D:1.00; C:1.00]
+    15.0000: (GET-ON LIFT1 P6 N1 N1 N2) [D:1.00; C:1.00]
+    16.0000: (MOVE-DOWN LIFT1 N1 N0) [D:1.00; C:1.00]
+    17.0000: (GET-DOWN LIFT1 P6 N0 N2 N1) [D:1.00; C:1.00]
+    18.0000: (GET-ON LIFT5 P6 N0 N1 N2) [D:1.00; C:1.00]
+    18.0000: (MOVE-UP LIFT1 N0 N2) [D:1.00; C:1.00]
+    19.0000: (MOVE-UP LIFT5 N0 N12) [D:1.00; C:1.00]
+    19.0000: (GET-ON LIFT1 P0 N2 N1 N2) [D:1.00; C:1.00]
+    20.0000: (GET-DOWN LIFT5 P6 N12 N2 N1) [D:1.00; C:1.00]
+    20.0000: (GET-DOWN LIFT1 P2 N2 N2 N1) [D:1.00; C:1.00]
+    21.0000: (MOVE-DOWN LIFT5 N12 N4) [D:1.00; C:1.00]
+    21.0000: (MOVE-UP LIFT1 N2 N3) [D:1.00; C:1.00]
+    22.0000: (MOVE-UP LIFT5 N4 N12) [D:1.00; C:1.00]
+    22.0000: (GET-DOWN LIFT1 P0 N3 N1 N0) [D:1.00; C:1.00]
+    23.0000: (GET-DOWN LIFT5 P4 N12 N1 N0) [D:1.00; C:1.00]
+    23.0000: (MOVE-DOWN LIFT1 N3 N1) [D:1.00; C:1.00]
+    24.0000: (MOVE-DOWN LIFT5 N12 N2) [D:1.00; C:1.00]
+    24.0000: (GET-ON LIFT4 P4 N12 N0 N1) [D:1.00; C:1.00]
+    24.0000: (GET-ON LIFT1 P7 N1 N0 N1) [D:1.00; C:1.00]
+    25.0000: (MOVE-DOWN LIFT4 N12 N9) [D:1.00; C:1.00]
+    25.0000: (GET-ON LIFT5 P2 N2 N0 N1) [D:1.00; C:1.00]
+    25.0000: (MOVE-DOWN LIFT1 N1 N0) [D:1.00; C:1.00]
+    26.0000: (GET-DOWN LIFT4 P4 N9 N1 N0) [D:1.00; C:1.00]
+    26.0000: (MOVE-UP LIFT5 N2 N12) [D:1.00; C:1.00]
+    26.0000: (GET-DOWN LIFT1 P7 N0 N1 N0) [D:1.00; C:1.00]
+    27.0000: (GET-DOWN LIFT5 P2 N12 N1 N0) [D:1.00; C:1.00]
+
+
+    Solution number: 3
+    Total time:      3.02
+    Search time:     3.02
+    Actions:         58
+    Duration:        28.000
+    Plan quality:    58.000
+    Total Num Flips: 3335
+        Plan file:       plan_problem3.pddl_3.SOL
+
+    2.E)
+    Plan computed:
+    Time: (ACTION) [action Duration; action Cost]
+    0.0000: (MOVE-UP LIFT5 N0 N8) [D:1.00; C:1.00]
+    0.0000: (MOVE-DOWN LIFT7 N12 N3) [D:1.00; C:1.00]
+    0.0000: (MOVE-DOWN LIFT4 N9 N8) [D:1.00; C:1.00]
+    0.0000: (MOVE-DOWN LIFT2 N5 N4) [D:1.00; C:1.00]
+    1.0000: (GET-ON LIFT5 P3 N8 N0 N1) [D:1.00; C:1.00]
+    1.0000: (GET-ON LIFT2 P1 N4 N0 N1) [D:1.00; C:1.00]
+    2.0000: (MOVE-DOWN LIFT5 N8 N0) [D:1.00; C:1.00]
+    2.0000: (MOVE-UP LIFT2 N4 N8) [D:1.00; C:1.00]
+    3.0000: (GET-DOWN LIFT5 P3 N0 N1 N0) [D:1.00; C:1.00]
+    3.0000: (GET-DOWN LIFT2 P1 N8 N1 N0) [D:1.00; C:1.00]
+    4.0000: (GET-ON LIFT1 P3 N0 N0 N1) [D:1.00; C:1.00]
+    4.0000: (GET-ON LIFT4 P1 N8 N0 N1) [D:1.00; C:1.00]
+    5.0000: (MOVE-UP LIFT1 N0 N1) [D:1.00; C:1.00]
+    5.0000: (MOVE-UP LIFT4 N8 N11) [D:1.00; C:1.00]
+    6.0000: (GET-DOWN LIFT1 P3 N1 N1 N0) [D:1.00; C:1.00]
+    6.0000: (GET-DOWN LIFT4 P1 N11 N1 N0) [D:1.00; C:1.00]
+    7.0000: (GET-ON LIFT1 P4 N1 N0 N1) [D:1.00; C:1.00]
+    8.0000: (GET-ON LIFT1 P2 N1 N1 N2) [D:1.00; C:1.00]
+    9.0000: (MOVE-UP LIFT1 N1 N3) [D:1.00; C:1.00]
+    10.0000: (MOVE-DOWN LIFT1 N3 N0) [D:1.00; C:1.00]
+    11.0000: (GET-DOWN LIFT1 P2 N0 N2 N1) [D:1.00; C:1.00]
+    12.0000: (GET-ON LIFT5 P2 N0 N0 N1) [D:1.00; C:1.00]
+    12.0000: (MOVE-UP LIFT1 N0 N3) [D:1.00; C:1.00]
+    13.0000: (MOVE-UP LIFT5 N0 N4) [D:1.00; C:1.00]
+    13.0000: (GET-DOWN LIFT1 P4 N3 N1 N0) [D:1.00; C:1.00]
+    14.0000: (MOVE-UP LIFT5 N4 N12) [D:1.00; C:1.00]
+    14.0000: (GET-ON LIFT7 P4 N3 N0 N1) [D:1.00; C:1.00]
+    14.0000: (MOVE-UP LIFT1 N3 N4) [D:1.00; C:1.00]
+    15.0000: (GET-DOWN LIFT5 P2 N12 N1 N0) [D:1.00; C:1.00]
+    15.0000: (MOVE-UP LIFT7 N3 N9) [D:1.00; C:1.00]
+    15.0000: (MOVE-DOWN LIFT1 N4 N2) [D:1.00; C:1.00]
+    16.0000: (GET-DOWN LIFT7 P4 N9 N1 N0) [D:1.00; C:1.00]
+    16.0000: (GET-ON LIFT1 P0 N2 N0 N1) [D:1.00; C:1.00]
+    17.0000: (MOVE-UP LIFT1 N2 N3) [D:1.00; C:1.00]
+    18.0000: (GET-DOWN LIFT1 P0 N3 N1 N0) [D:1.00; C:1.00]
+
+
+    Solution number: 3
+    Total time:      1.05
+    Search time:     1.03
+    Actions:         35
+    Duration:        19.000
+    Plan quality:    35.000
+    Total Num Flips: 1456
+        Plan file:       plan_problem4.pddl_3.SOL
+    
+3)LPG CON TIMESTEPS
+    3.A)
+    Plan computed:
+    Time: (ACTION) [action Duration; action Cost]
+    0.0000: (MOVE-DOWN LIFT4 N9 N8) [D:1.00; C:1.00]
+    0.0000: (MOVE-UP LIFT5 N0 N4) [D:1.00; C:1.00]
+    0.0000: (MOVE-DOWN LIFT3 N5 N4) [D:1.00; C:1.00]
+    0.0000: (MOVE-UP LIFT1 N0 N4) [D:1.00; C:1.00]
+    1.0000: (GET-ON LIFT3 P1 N4 N0 N1) [D:1.00; C:1.00]
+    2.0000: (MOVE-UP LIFT3 N4 N8) [D:1.00; C:1.00]
+    3.0000: (GET-DOWN LIFT3 P1 N8 N1 N0) [D:1.00; C:1.00]
+    4.0000: (GET-ON LIFT4 P1 N8 N0 N1) [D:1.00; C:1.00]
+    4.0000: (GET-ON LIFT3 P3 N8 N0 N1) [D:1.00; C:1.00]
+    5.0000: (MOVE-UP LIFT4 N8 N11) [D:1.00; C:1.00]
+    5.0000: (MOVE-DOWN LIFT3 N8 N4) [D:1.00; C:1.00]
+    6.0000: (GET-DOWN LIFT4 P1 N11 N1 N0) [D:1.00; C:1.00]
+    6.0000: (GET-DOWN LIFT3 P3 N4 N1 N0) [D:1.00; C:1.00]
+    7.0000: (MOVE-UP LIFT4 N11 N12) [D:1.00; C:1.00]
+    7.0000: (GET-ON LIFT1 P3 N4 N0 N1) [D:1.00; C:1.00]
+    8.0000: (MOVE-DOWN LIFT1 N4 N1) [D:1.00; C:1.00]
+    9.0000: (GET-ON LIFT1 P4 N1 N1 N2) [D:1.00; C:1.00]
+    10.0000: (GET-DOWN LIFT1 P3 N1 N2 N1) [D:1.00; C:1.00]
+    11.0000: (GET-ON LIFT1 P2 N1 N1 N2) [D:1.00; C:1.00]
+    12.0000: (MOVE-UP LIFT1 N1 N2) [D:1.00; C:1.00]
+    13.0000: (MOVE-UP LIFT1 N2 N4) [D:1.00; C:1.00]
+    14.0000: (GET-DOWN LIFT1 P4 N4 N2 N1) [D:1.00; C:1.00]
+    15.0000: (GET-ON LIFT5 P4 N4 N0 N1) [D:1.00; C:1.00]
+    15.0000: (GET-DOWN LIFT1 P2 N4 N1 N0) [D:1.00; C:1.00]
+    16.0000: (GET-ON LIFT5 P2 N4 N1 N2) [D:1.00; C:1.00]
+    16.0000: (MOVE-DOWN LIFT1 N4 N2) [D:1.00; C:1.00]
+    17.0000: (MOVE-UP LIFT5 N4 N12) [D:1.00; C:1.00]
+    17.0000: (GET-ON LIFT1 P0 N2 N0 N1) [D:1.00; C:1.00]
+    18.0000: (GET-DOWN LIFT5 P4 N12 N2 N1) [D:1.00; C:1.00]
+    18.0000: (MOVE-UP LIFT1 N2 N3) [D:1.00; C:1.00]
+    19.0000: (GET-DOWN LIFT5 P2 N12 N1 N0) [D:1.00; C:1.00]
+    19.0000: (GET-DOWN LIFT1 P0 N3 N1 N0) [D:1.00; C:1.00]
+    19.0000: (GET-ON LIFT4 P4 N12 N0 N1) [D:1.00; C:1.00]
+    20.0000: (MOVE-DOWN LIFT4 N12 N9) [D:1.00; C:1.00]
+    21.0000: (GET-DOWN LIFT4 P4 N9 N1 N0) [D:1.00; C:1.00]
+
+
+    Solution number: 3
+    Total time:      7.91
+    Search time:     7.91
+    Actions:         35
+    Duration:        22.000
+    Plan quality:    35.000
+    Total Num Flips: 10600
+        Plan file:       plan_problem.pddl_3.SOL
+
+    3.B)
+    Plan computed:
+    Time: (ACTION) [action Duration; action Cost]
+    0.0000: (MOVE-UP LIFT1 N0 N3) [D:1.00; C:1.00]
+    0.0000: (MOVE-DOWN LIFT4 N9 N8) [D:1.00; C:1.00]
+    0.0000: (GET-ON LIFT5 P4 N0 N0 N1) [D:1.00; C:1.00]
+    1.0000: (GET-ON LIFT1 P3 N3 N0 N1) [D:1.00; C:1.00]
+    1.0000: (MOVE-UP LIFT4 N8 N12) [D:1.00; C:1.00]
+    1.0000: (MOVE-UP LIFT5 N0 N4) [D:1.00; C:1.00]
+    2.0000: (MOVE-DOWN LIFT1 N3 N1) [D:1.00; C:1.00]
+    2.0000: (MOVE-UP LIFT5 N4 N12) [D:1.00; C:1.00]
+    3.0000: (GET-DOWN LIFT1 P3 N1 N1 N0) [D:1.00; C:1.00]
+    3.0000: (GET-DOWN LIFT5 P4 N12 N1 N0) [D:1.00; C:1.00]
+    4.0000: (GET-ON LIFT4 P4 N12 N0 N1) [D:1.00; C:1.00]
+    4.0000: (MOVE-UP LIFT1 N1 N4) [D:1.00; C:1.00]
+    5.0000: (MOVE-DOWN LIFT4 N12 N9) [D:1.00; C:1.00]
+    6.0000: (GET-DOWN LIFT4 P4 N9 N1 N0) [D:1.00; C:1.00]
+    7.0000: (GET-ON LIFT4 P0 N9 N0 N1) [D:1.00; C:1.00]
+    8.0000: (MOVE-UP LIFT4 N9 N11) [D:1.00; C:1.00]
+    9.0000: (MOVE-UP LIFT4 N11 N12) [D:1.00; C:1.00]
+    10.0000: (GET-DOWN LIFT4 P0 N12 N1 N0) [D:1.00; C:1.00]
+    11.0000: (GET-ON LIFT5 P0 N12 N0 N1) [D:1.00; C:1.00]
+    11.0000: (GET-ON LIFT4 P1 N12 N0 N1) [D:1.00; C:1.00]
+    12.0000: (MOVE-DOWN LIFT5 N12 N4) [D:1.00; C:1.00]
+    12.0000: (MOVE-DOWN LIFT4 N12 N10) [D:1.00; C:1.00]
+    13.0000: (GET-DOWN LIFT5 P0 N4 N1 N0) [D:1.00; C:1.00]
+    13.0000: (MOVE-UP LIFT4 N10 N11) [D:1.00; C:1.00]
+    14.0000: (GET-ON LIFT1 P0 N4 N0 N1) [D:1.00; C:1.00]
+    14.0000: (GET-DOWN LIFT4 P1 N11 N1 N0) [D:1.00; C:1.00]
+    14.0000: (GET-ON LIFT5 P2 N4 N0 N1) [D:1.00; C:1.00]
+    15.0000: (MOVE-DOWN LIFT1 N4 N3) [D:1.00; C:1.00]
+    15.0000: (MOVE-UP LIFT5 N4 N6) [D:1.00; C:1.00]
+    16.0000: (GET-DOWN LIFT1 P0 N3 N1 N0) [D:1.00; C:1.00]
+    16.0000: (MOVE-UP LIFT5 N6 N10) [D:1.00; C:1.00]
+    17.0000: (MOVE-UP LIFT5 N10 N12) [D:1.00; C:1.00]
+    18.0000: (GET-DOWN LIFT5 P2 N12 N1 N0) [D:1.00; C:1.00]
+
+
+    Solution number: 3
+    Total time:      0.54
+    Search time:     0.54
+    Actions:         33
+    Duration:        19.000
+    Plan quality:    33.000
+    Total Num Flips: 959
+        Plan file:       plan_problem1.pddl_3.SOL
+    
+    3.C)
+    Plan computed:
+    Time: (ACTION) [action Duration; action Cost]
+    0.0000: (MOVE-UP LIFT1 N0 N3) [D:1.00; C:1.00]
+    0.0000: (MOVE-UP LIFT2 N5 N8) [D:1.00; C:1.00]
+    0.0000: (GET-ON LIFT4 P0 N9 N0 N1) [D:1.00; C:1.00]
+    1.0000: (GET-ON LIFT1 P3 N3 N0 N1) [D:1.00; C:1.00]
+    1.0000: (MOVE-DOWN LIFT4 N9 N8) [D:1.00; C:1.00]
+    2.0000: (MOVE-DOWN LIFT1 N3 N0) [D:1.00; C:1.00]
+    2.0000: (GET-DOWN LIFT4 P0 N8 N1 N0) [D:1.00; C:1.00]
+    3.0000: (GET-DOWN LIFT1 P3 N0 N1 N0) [D:1.00; C:1.00]
+    3.0000: (GET-ON LIFT2 P0 N8 N0 N1) [D:1.00; C:1.00]
+    3.0000: (MOVE-UP LIFT4 N8 N9) [D:1.00; C:1.00]
+    4.0000: (GET-ON LIFT5 P3 N0 N0 N1) [D:1.00; C:1.00]
+    4.0000: (MOVE-DOWN LIFT4 N9 N8) [D:1.00; C:1.00]
+    4.0000: (GET-ON LIFT1 P4 N0 N0 N1) [D:1.00; C:1.00]
+    4.0000: (MOVE-DOWN LIFT2 N8 N4) [D:1.00; C:1.00]
+    5.0000: (MOVE-UP LIFT5 N0 N8) [D:1.00; C:1.00]
+    5.0000: (MOVE-UP LIFT1 N0 N2) [D:1.00; C:1.00]
+    5.0000: (GET-DOWN LIFT2 P0 N4 N1 N0) [D:1.00; C:1.00]
+    6.0000: (GET-DOWN LIFT5 P3 N8 N1 N0) [D:1.00; C:1.00]
+    6.0000: (MOVE-UP LIFT1 N2 N4) [D:1.00; C:1.00]
+    7.0000: (GET-ON LIFT4 P3 N8 N0 N1) [D:1.00; C:1.00]
+    7.0000: (GET-ON LIFT1 P0 N4 N1 N2) [D:1.00; C:1.00]
+    7.0000: (MOVE-DOWN LIFT5 N8 N0) [D:1.00; C:1.00]
+    8.0000: (MOVE-UP LIFT4 N8 N11) [D:1.00; C:1.00]
+    8.0000: (MOVE-DOWN LIFT1 N4 N0) [D:1.00; C:1.00]
+    9.0000: (GET-DOWN LIFT4 P3 N11 N1 N0) [D:1.00; C:1.00]
+    9.0000: (GET-DOWN LIFT1 P0 N0 N2 N1) [D:1.00; C:1.00]
+    10.0000: (GET-DOWN LIFT1 P4 N0 N1 N0) [D:1.00; C:1.00]
+    11.0000: (GET-ON LIFT5 P4 N0 N0 N1) [D:1.00; C:1.00]
+    12.0000: (MOVE-UP LIFT5 N0 N12) [D:1.00; C:1.00]
+    13.0000: (GET-DOWN LIFT5 P4 N12 N1 N0) [D:1.00; C:1.00]
+    14.0000: (MOVE-DOWN LIFT5 N12 N4) [D:1.00; C:1.00]
+    15.0000: (GET-ON LIFT5 P2 N4 N0 N1) [D:1.00; C:1.00]
+    16.0000: (MOVE-UP LIFT5 N4 N12) [D:1.00; C:1.00]
+    17.0000: (GET-DOWN LIFT5 P2 N12 N1 N0) [D:1.00; C:1.00]
+    18.0000: (GET-ON LIFT5 P1 N12 N0 N1) [D:1.00; C:1.00]
+    19.0000: (MOVE-DOWN LIFT5 N12 N2) [D:1.00; C:1.00]
+    20.0000: (GET-DOWN LIFT5 P1 N2 N1 N0) [D:1.00; C:1.00]
+
+
+    Solution number: 3
+    Total time:      1.69
+    Search time:     1.67
+    Actions:         37
+    Duration:        21.000
+    Plan quality:    37.000
+    Total Num Flips: 2236
+        Plan file:       plan_problem2.pddl_3.SOL
+
+    3.D)
+    Plan computed:
+    Time: (ACTION) [action Duration; action Cost]
+    0.0000: (MOVE-DOWN LIFT4 N9 N8) [D:1.00; C:1.00]
+    0.0000: (MOVE-DOWN LIFT2 N5 N4) [D:1.00; C:1.00]
+    0.0000: (MOVE-DOWN LIFT3 N5 N4) [D:1.00; C:1.00]
+    0.0000: (MOVE-UP LIFT1 N0 N1) [D:1.00; C:1.00]
+    0.0000: (MOVE-UP LIFT5 N0 N2) [D:1.00; C:1.00]
+    1.0000: (GET-ON LIFT3 P1 N4 N0 N1) [D:1.00; C:1.00]
+    1.0000: (GET-ON LIFT1 P2 N1 N0 N1) [D:1.00; C:1.00]
+    1.0000: (MOVE-UP LIFT5 N2 N12) [D:1.00; C:1.00]
+    2.0000: (MOVE-UP LIFT3 N4 N8) [D:1.00; C:1.00]
+    2.0000: (MOVE-UP LIFT1 N1 N4) [D:1.00; C:1.00]
+    2.0000: (MOVE-DOWN LIFT5 N12 N2) [D:1.00; C:1.00]
+    3.0000: (GET-DOWN LIFT3 P1 N8 N1 N0) [D:1.00; C:1.00]
+    3.0000: (GET-DOWN LIFT1 P2 N4 N1 N0) [D:1.00; C:1.00]
+    3.0000: (MOVE-DOWN LIFT5 N2 N0) [D:1.00; C:1.00]
+    4.0000: (GET-ON LIFT4 P1 N8 N0 N1) [D:1.00; C:1.00]
+    4.0000: (MOVE-DOWN LIFT1 N4 N1) [D:1.00; C:1.00]
+    4.0000: (GET-ON LIFT3 P3 N8 N0 N1) [D:1.00; C:1.00]
+    5.0000: (MOVE-UP LIFT4 N8 N11) [D:1.00; C:1.00]
+    5.0000: (MOVE-UP LIFT1 N1 N4) [D:1.00; C:1.00]
+    5.0000: (MOVE-DOWN LIFT3 N8 N7) [D:1.00; C:1.00]
+    6.0000: (GET-DOWN LIFT4 P1 N11 N1 N0) [D:1.00; C:1.00]
+    6.0000: (MOVE-DOWN LIFT1 N4 N1) [D:1.00; C:1.00]
+    6.0000: (GET-ON LIFT3 P7 N7 N1 N2) [D:1.00; C:1.00]
+    7.0000: (MOVE-DOWN LIFT4 N11 N8) [D:1.00; C:1.00]
+    7.0000: (GET-ON LIFT1 P6 N1 N0 N1) [D:1.00; C:1.00]
+    7.0000: (MOVE-DOWN LIFT3 N7 N4) [D:1.00; C:1.00]
+    8.0000: (GET-ON LIFT1 P4 N1 N1 N2) [D:1.00; C:1.00]
+    8.0000: (GET-DOWN LIFT3 P7 N4 N2 N1) [D:1.00; C:1.00]
+    9.0000: (MOVE-UP LIFT1 N1 N3) [D:1.00; C:1.00]
+    9.0000: (GET-DOWN LIFT3 P3 N4 N1 N0) [D:1.00; C:1.00]
+    10.0000: (MOVE-UP LIFT1 N3 N4) [D:1.00; C:1.00]
+    11.0000: (GET-DOWN LIFT1 P4 N4 N2 N1) [D:1.00; C:1.00]
+    12.0000: (MOVE-DOWN LIFT1 N4 N1) [D:1.00; C:1.00]
+    12.0000: (GET-ON LIFT2 P4 N4 N0 N1) [D:1.00; C:1.00]
+    13.0000: (MOVE-DOWN LIFT1 N1 N0) [D:1.00; C:1.00]
+    13.0000: (MOVE-UP LIFT2 N4 N8) [D:1.00; C:1.00]
+    14.0000: (GET-DOWN LIFT1 P6 N0 N1 N0) [D:1.00; C:1.00]
+    14.0000: (GET-DOWN LIFT2 P4 N8 N1 N0) [D:1.00; C:1.00]
+    15.0000: (GET-ON LIFT5 P6 N0 N0 N1) [D:1.00; C:1.00]
+    15.0000: (GET-ON LIFT4 P4 N8 N0 N1) [D:1.00; C:1.00]
+    15.0000: (MOVE-UP LIFT1 N0 N4) [D:1.00; C:1.00]
+    16.0000: (MOVE-UP LIFT5 N0 N12) [D:1.00; C:1.00]
+    16.0000: (MOVE-UP LIFT4 N8 N12) [D:1.00; C:1.00]
+    16.0000: (GET-ON LIFT1 P7 N4 N0 N1) [D:1.00; C:1.00]
+    17.0000: (GET-DOWN LIFT5 P6 N12 N1 N0) [D:1.00; C:1.00]
+    17.0000: (MOVE-DOWN LIFT4 N12 N9) [D:1.00; C:1.00]
+    17.0000: (MOVE-DOWN LIFT1 N4 N3) [D:1.00; C:1.00]
+    18.0000: (GET-DOWN LIFT4 P4 N9 N1 N0) [D:1.00; C:1.00]
+    18.0000: (MOVE-DOWN LIFT1 N3 N2) [D:1.00; C:1.00]
+    18.0000: (MOVE-DOWN LIFT5 N12 N4) [D:1.00; C:1.00]
+    19.0000: (GET-ON LIFT1 P0 N2 N1 N2) [D:1.00; C:1.00]
+    19.0000: (GET-ON LIFT5 P2 N4 N0 N1) [D:1.00; C:1.00]
+    20.0000: (MOVE-DOWN LIFT1 N2 N1) [D:1.00; C:1.00]
+    20.0000: (MOVE-UP LIFT5 N4 N12) [D:1.00; C:1.00]
+    21.0000: (MOVE-DOWN LIFT1 N1 N0) [D:1.00; C:1.00]
+    21.0000: (GET-DOWN LIFT5 P2 N12 N1 N0) [D:1.00; C:1.00]
+    22.0000: (GET-DOWN LIFT1 P7 N0 N2 N1) [D:1.00; C:1.00]
+    23.0000: (MOVE-UP LIFT1 N0 N3) [D:1.00; C:1.00]
+    24.0000: (GET-DOWN LIFT1 P0 N3 N1 N0) [D:1.00; C:1.00]
+    25.0000: (MOVE-UP LIFT1 N3 N4) [D:1.00; C:1.00]
+    26.0000: (GET-ON LIFT1 P3 N4 N0 N1) [D:1.00; C:1.00]
+    27.0000: (MOVE-DOWN LIFT1 N4 N1) [D:1.00; C:1.00]
+    28.0000: (GET-DOWN LIFT1 P3 N1 N1 N0) [D:1.00; C:1.00]
+
+
+    Solution number: 3
+    Total time:      14.86
+    Search time:     14.86
+    Actions:         63
+    Duration:        29.000
+    Plan quality:    63.000
+    Total Num Flips: 10210
+        Plan file:       plan_problem3.pddl_3.SOL
+
+    3.E)
+    Plan computed:
+    Time: (ACTION) [action Duration; action Cost]
+    0.0000: (MOVE-DOWN LIFT7 N12 N9) [D:1.00; C:1.00]
+    0.0000: (MOVE-DOWN LIFT6 N11 N8) [D:1.00; C:1.00]
+    0.0000: (MOVE-DOWN LIFT3 N5 N4) [D:1.00; C:1.00]
+    0.0000: (MOVE-UP LIFT5 N0 N4) [D:1.00; C:1.00]
+    0.0000: (MOVE-UP LIFT1 N0 N1) [D:1.00; C:1.00]
+    0.0000: (MOVE-DOWN LIFT4 N9 N8) [D:1.00; C:1.00]
+    1.0000: (GET-ON LIFT5 P1 N4 N0 N1) [D:1.00; C:1.00]
+    1.0000: (GET-ON LIFT1 P2 N1 N0 N1) [D:1.00; C:1.00]
+    2.0000: (MOVE-UP LIFT5 N4 N8) [D:1.00; C:1.00]
+    2.0000: (MOVE-UP LIFT1 N1 N4) [D:1.00; C:1.00]
+    3.0000: (GET-DOWN LIFT5 P1 N8 N1 N0) [D:1.00; C:1.00]
+    3.0000: (GET-DOWN LIFT1 P2 N4 N1 N0) [D:1.00; C:1.00]
+    4.0000: (GET-ON LIFT3 P2 N4 N0 N1) [D:1.00; C:1.00]
+    4.0000: (MOVE-DOWN LIFT1 N4 N2) [D:1.00; C:1.00]
+    4.0000: (GET-ON LIFT4 P1 N8 N0 N1) [D:1.00; C:1.00]
+    5.0000: (MOVE-UP LIFT3 N4 N8) [D:1.00; C:1.00]
+    5.0000: (GET-ON LIFT1 P0 N2 N0 N1) [D:1.00; C:1.00]
+    5.0000: (MOVE-UP LIFT4 N8 N11) [D:1.00; C:1.00]
+    6.0000: (GET-DOWN LIFT3 P2 N8 N1 N0) [D:1.00; C:1.00]
+    6.0000: (MOVE-UP LIFT1 N2 N3) [D:1.00; C:1.00]
+    6.0000: (GET-DOWN LIFT4 P1 N11 N1 N0) [D:1.00; C:1.00]
+    7.0000: (GET-ON LIFT6 P2 N8 N0 N1) [D:1.00; C:1.00]
+    7.0000: (GET-DOWN LIFT1 P0 N3 N1 N0) [D:1.00; C:1.00]
+    7.0000: (GET-ON LIFT3 P3 N8 N0 N1) [D:1.00; C:1.00]
+    8.0000: (MOVE-UP LIFT6 N8 N9) [D:1.00; C:1.00]
+    8.0000: (MOVE-UP LIFT1 N3 N4) [D:1.00; C:1.00]
+    8.0000: (MOVE-DOWN LIFT3 N8 N6) [D:1.00; C:1.00]
+    9.0000: (GET-DOWN LIFT6 P2 N9 N1 N0) [D:1.00; C:1.00]
+    9.0000: (MOVE-DOWN LIFT3 N6 N4) [D:1.00; C:1.00]
+    10.0000: (GET-ON LIFT7 P2 N9 N0 N1) [D:1.00; C:1.00]
+    10.0000: (GET-DOWN LIFT3 P3 N4 N1 N0) [D:1.00; C:1.00]
+    11.0000: (MOVE-UP LIFT7 N9 N12) [D:1.00; C:1.00]
+    11.0000: (GET-ON LIFT1 P3 N4 N0 N1) [D:1.00; C:1.00]
+    12.0000: (GET-DOWN LIFT7 P2 N12 N1 N0) [D:1.00; C:1.00]
+    12.0000: (MOVE-DOWN LIFT1 N4 N1) [D:1.00; C:1.00]
+    13.0000: (GET-DOWN LIFT1 P3 N1 N1 N0) [D:1.00; C:1.00]
+    13.0000: (MOVE-DOWN LIFT7 N12 N3) [D:1.00; C:1.00]
+    14.0000: (GET-ON LIFT1 P4 N1 N0 N1) [D:1.00; C:1.00]
+    15.0000: (MOVE-DOWN LIFT1 N1 N0) [D:1.00; C:1.00]
+    16.0000: (MOVE-UP LIFT1 N0 N3) [D:1.00; C:1.00]
+    17.0000: (GET-DOWN LIFT1 P4 N3 N1 N0) [D:1.00; C:1.00]
+    18.0000: (GET-ON LIFT7 P4 N3 N0 N1) [D:1.00; C:1.00]
+    19.0000: (MOVE-UP LIFT7 N3 N9) [D:1.00; C:1.00]
+    20.0000: (GET-DOWN LIFT7 P4 N9 N1 N0) [D:1.00; C:1.00]
+
+
+    Solution number: 3
+    Total time:      1.35
+    Search time:     1.35
+    Actions:         44
+    Duration:        21.000
+    Plan quality:    44.000
+    Total Num Flips: 2079
+        Plan file:       plan_problem4.pddl_3.SOL
+
+4) OPTIC
+    4.A) 
+    ; Plan found with metric 0.013
+    ; States evaluated so far: 484
+    ; States pruned based on pre-heuristic cost lower bound: 0
+    ; Time 0.27
+    0.000: (move-up lift1 n0 n1)  [0.001]
+    0.000: (move-up lift5 n0 n2)  [0.001]
+    0.000: (move-down lift2 n5 n4)  [0.001]
+    0.000: (move-down lift3 n5 n4)  [0.001]
+    0.000: (move-down lift4 n9 n8)  [0.001]
+    0.001: (get-on lift5 p0 n2 n0 n1)  [0.001]
+    0.001: (move-up lift2 n4 n8)  [0.001]
+    0.001: (get-on lift3 p1 n4 n0 n1)  [0.001]
+    0.001: (get-on lift1 p4 n1 n0 n1)  [0.001]
+    0.002: (move-up lift5 n2 n12)  [0.001]
+    0.002: (get-on lift2 p3 n8 n0 n1)  [0.001]
+    0.002: (move-up lift3 n4 n8)  [0.001]
+    0.002: (get-on lift1 p2 n1 n1 n2)  [0.001]
+    0.003: (move-down lift5 n12 n0)  [0.001]
+    0.003: (move-down lift2 n8 n4)  [0.001]
+    0.003: (move-up lift1 n1 n4)  [0.001]
+    0.003: (get-down lift3 p1 n8 n1 n0)  [0.001]
+    0.004: (get-down lift2 p3 n4 n1 n0)  [0.001]
+    0.004: (get-down lift5 p0 n0 n1 n0)  [0.001]
+    0.004: (get-down lift1 p4 n4 n2 n1)  [0.001]
+    0.005: (get-on lift1 p3 n4 n1 n2)  [0.001]
+    0.005: (get-on lift2 p4 n4 n0 n1)  [0.001]
+    0.006: (move-down lift1 n4 n0)  [0.001]
+    0.006: (move-up lift2 n4 n8)  [0.001]
+    0.007: (get-down lift2 p4 n8 n1 n0)  [0.001]
+    0.007: (get-down lift1 p2 n0 n2 n1)  [0.001]
+    0.008: (get-on lift5 p2 n0 n0 n1)  [0.001]
+    0.008: (get-on lift1 p0 n0 n1 n2)  [0.001]
+    0.008: (get-on lift4 p4 n8 n0 n1)  [0.001]
+    0.009: (move-up lift5 n0 n12)  [0.001]
+    0.009: (move-up lift1 n0 n3)  [0.001]
+    0.009: (get-on lift4 p1 n8 n1 n2)  [0.001]
+    0.010: (get-down lift5 p2 n12 n1 n0)  [0.001]
+    0.010: (get-down lift1 p0 n3 n2 n1)  [0.001]
+    0.010: (move-up lift4 n8 n11)  [0.001]
+    0.011: (move-down lift1 n3 n1)  [0.001]
+    0.011: (get-down lift4 p1 n11 n2 n1)  [0.001]
+    0.012: (get-down lift1 p3 n1 n1 n0)  [0.001]
+    0.012: (move-down lift4 n11 n9)  [0.001]
+    0.013: (get-down lift4 p4 n9 n1 n0)  [0.001]
+
+    * All goal deadlines now no later than 0.013
+
+    4.B)
+    ; Plan found with metric 0.011
+    ; States evaluated so far: 128
+    ; States pruned based on pre-heuristic cost lower bound: 0
+    ; Time 0.07
+    0.000: (move-up lift1 n0 n3)  [0.001]
+    0.000: (get-on lift4 p0 n9 n0 n1)  [0.001]
+    0.000: (get-on lift5 p4 n0 n0 n1)  [0.001]
+    0.001: (move-up lift4 n9 n12)  [0.001]
+    0.001: (move-up lift5 n0 n12)  [0.001]
+    0.001: (move-up lift1 n3 n4)  [0.001]
+    0.002: (get-down lift4 p0 n12 n1 n0)  [0.001]
+    0.002: (get-down lift5 p4 n12 n1 n0)  [0.001]
+    0.003: (get-on lift4 p4 n12 n0 n1)  [0.001]
+    0.003: (get-on lift5 p0 n12 n0 n1)  [0.001]
+    0.004: (get-on lift4 p1 n12 n1 n2)  [0.001]
+    0.004: (move-down lift5 n12 n4)  [0.001]
+    0.005: (move-down lift4 n12 n11)  [0.001]
+    0.005: (get-down lift5 p0 n4 n1 n0)  [0.001]
+    0.006: (get-down lift4 p1 n11 n2 n1)  [0.001]
+    0.006: (get-on lift5 p2 n4 n0 n1)  [0.001]
+    0.006: (get-on lift1 p0 n4 n0 n1)  [0.001]
+    0.007: (move-up lift5 n4 n12)  [0.001]
+    0.007: (move-down lift4 n11 n9)  [0.001]
+    0.007: (move-down lift1 n4 n3)  [0.001]
+    0.008: (get-down lift4 p4 n9 n1 n0)  [0.001]
+    0.008: (get-down lift5 p2 n12 n1 n0)  [0.001]
+    0.008: (get-down lift1 p0 n3 n1 n0)  [0.001]
+    0.009: (get-on lift1 p3 n3 n0 n1)  [0.001]
+    0.010: (move-down lift1 n3 n1)  [0.001]
+    0.011: (get-down lift1 p3 n1 n1 n0)  [0.001]
+
+    * All goal deadlines now no later than 0.011
+
+    4.C)
+    ; Plan found with metric 0.012
+    ; States evaluated so far: 1372
+    ; States pruned based on pre-heuristic cost lower bound: 0
+    ; Time 0.66
+    0.000: (get-on lift4 p0 n9 n0 n1)  [0.001]
+    0.000: (get-on lift5 p4 n0 n0 n1)  [0.001]
+    0.000: (move-up lift1 n0 n3)  [0.001]
+    0.000: (move-down lift2 n5 n4)  [0.001]
+    0.001: (move-up lift4 n9 n10)  [0.001]
+    0.001: (move-up lift5 n0 n12)  [0.001]
+    0.001: (get-on lift1 p3 n3 n0 n1)  [0.001]
+    0.002: (get-down lift5 p4 n12 n1 n0)  [0.001]
+    0.002: (move-up lift4 n10 n11)  [0.001]
+    0.002: (move-up lift1 n3 n4)  [0.001]
+    0.003: (move-up lift4 n11 n12)  [0.001]
+    0.003: (get-down lift1 p3 n4 n1 n0)  [0.001]
+    0.003: (get-on lift5 p1 n12 n0 n1)  [0.001]
+    0.004: (get-down lift4 p0 n12 n1 n0)  [0.001]
+    0.004: (move-down lift5 n12 n4)  [0.001]
+    0.004: (get-on lift2 p3 n4 n0 n1)  [0.001]
+    0.005: (move-down lift4 n12 n11)  [0.001]
+    0.005: (get-on lift5 p2 n4 n1 n2)  [0.001]
+    0.005: (move-up lift2 n4 n8)  [0.001]
+    0.006: (move-down lift5 n4 n2)  [0.001]
+    0.006: (move-down lift4 n11 n8)  [0.001]
+    0.006: (get-down lift2 p3 n8 n1 n0)  [0.001]
+    0.007: (get-on lift4 p3 n8 n0 n1)  [0.001]
+    0.007: (get-down lift5 p1 n2 n2 n1)  [0.001]
+    0.008: (move-up lift4 n8 n11)  [0.001]
+    0.008: (move-up lift5 n2 n12)  [0.001]
+    0.009: (get-down lift5 p2 n12 n1 n0)  [0.001]
+    0.009: (get-down lift4 p3 n11 n1 n0)  [0.001]
+    0.010: (get-on lift5 p0 n12 n0 n1)  [0.001]
+    0.011: (move-down lift5 n12 n0)  [0.001]
+    0.012: (get-down lift5 p0 n0 n1 n0)  [0.001]
+
+    * All goal deadlines now no later than 0.012
+
+    4.D)
+    ; Plan found with metric 0.024
+    ; States evaluated so far: 604
+    ; States pruned based on pre-heuristic cost lower bound: 0
+    ; Time 0.55
+    0.000: (move-down lift2 n5 n4)  [0.001]
+    0.000: (move-up lift3 n5 n7)  [0.001]
+    0.000: (move-up lift5 n0 n8)  [0.001]
+    0.000: (move-down lift4 n9 n8)  [0.001]
+    0.000: (move-up lift1 n0 n2)  [0.001]
+    0.001: (get-on lift3 p7 n7 n0 n1)  [0.001]
+    0.001: (get-on lift2 p1 n4 n0 n1)  [0.001]
+    0.001: (get-on lift1 p0 n2 n0 n1)  [0.001]
+    0.002: (move-up lift3 n7 n8)  [0.001]
+    0.002: (move-up lift2 n4 n8)  [0.001]
+    0.002: (move-up lift1 n2 n3)  [0.001]
+    0.003: (get-down lift3 p7 n8 n1 n0)  [0.001]
+    0.003: (get-down lift2 p1 n8 n1 n0)  [0.001]
+    0.003: (get-down lift1 p0 n3 n1 n0)  [0.001]
+    0.004: (get-on lift5 p7 n8 n0 n1)  [0.001]
+    0.004: (move-down lift2 n8 n4)  [0.001]
+    0.004: (get-on lift3 p3 n8 n0 n1)  [0.001]
+    0.004: (get-on lift4 p1 n8 n0 n1)  [0.001]
+    0.004: (move-up lift1 n3 n4)  [0.001]
+    0.005: (move-down lift5 n8 n0)  [0.001]
+    0.005: (move-up lift4 n8 n11)  [0.001]
+    0.005: (move-down lift3 n8 n4)  [0.001]
+    0.006: (get-down lift3 p3 n4 n1 n0)  [0.001]
+    0.006: (get-down lift5 p7 n0 n1 n0)  [0.001]
+    0.006: (get-down lift4 p1 n11 n1 n0)  [0.001]
+    0.007: (get-on lift1 p3 n4 n0 n1)  [0.001]
+    0.007: (move-up lift4 n11 n12)  [0.001]
+    0.008: (move-down lift1 n4 n1)  [0.001]
+    0.009: (get-down lift1 p3 n1 n1 n0)  [0.001]
+    0.010: (get-on lift1 p6 n1 n0 n1)  [0.001]
+    0.011: (get-on lift1 p4 n1 n1 n2)  [0.001]
+    0.012: (move-down lift1 n1 n0)  [0.001]
+    0.013: (get-down lift1 p6 n0 n2 n1)  [0.001]
+    0.014: (get-on lift5 p6 n0 n0 n1)  [0.001]
+    0.014: (move-up lift1 n0 n1)  [0.001]
+    0.015: (move-up lift5 n0 n12)  [0.001]
+    0.015: (get-on lift1 p2 n1 n1 n2)  [0.001]
+    0.016: (move-up lift1 n1 n2)  [0.001]
+    0.016: (get-down lift5 p6 n12 n1 n0)  [0.001]
+    0.017: (get-down lift1 p4 n2 n2 n1)  [0.001]
+    0.017: (move-down lift5 n12 n2)  [0.001]
+    0.018: (get-down lift1 p2 n2 n1 n0)  [0.001]
+    0.018: (get-on lift5 p4 n2 n0 n1)  [0.001]
+    0.019: (move-up lift5 n2 n12)  [0.001]
+    0.019: (move-up lift1 n2 n3)  [0.001]
+    0.020: (get-down lift5 p4 n12 n1 n0)  [0.001]
+    0.021: (move-down lift5 n12 n2)  [0.001]
+    0.021: (get-on lift4 p4 n12 n0 n1)  [0.001]
+    0.022: (get-on lift5 p2 n2 n0 n1)  [0.001]
+    0.022: (move-down lift4 n12 n9)  [0.001]
+    0.023: (move-up lift5 n2 n12)  [0.001]
+    0.023: (get-down lift4 p4 n9 n1 n0)  [0.001]
+    0.024: (get-down lift5 p2 n12 n1 n0)  [0.001]
+
+    * All goal deadlines now no later than 0.024
+
+    4.E)
+    ; Plan found with metric 0.012
+    ; States evaluated so far: 352
+    ; States pruned based on pre-heuristic cost lower bound: 0
+    ; Time 0.21
+    0.000: (move-down lift4 n9 n8)  [0.001]
+    0.000: (move-down lift7 n12 n0)  [0.001]
+    0.000: (move-down lift2 n5 n4)  [0.001]
+    0.000: (move-down lift3 n5 n4)  [0.001]
+    0.000: (move-up lift5 n0 n8)  [0.001]
+    0.000: (move-up lift1 n0 n1)  [0.001]
+    0.001: (get-on lift2 p1 n4 n0 n1)  [0.001]
+    0.001: (get-on lift5 p3 n8 n0 n1)  [0.001]
+    0.001: (get-on lift1 p4 n1 n0 n1)  [0.001]
+    0.002: (move-up lift2 n4 n8)  [0.001]
+    0.002: (move-up lift5 n8 n12)  [0.001]
+    0.002: (get-on lift1 p2 n1 n1 n2)  [0.001]
+    0.003: (get-down lift2 p1 n8 n1 n0)  [0.001]
+    0.003: (move-down lift5 n12 n0)  [0.001]
+    0.003: (move-down lift1 n1 n0)  [0.001]
+    0.004: (get-on lift4 p1 n8 n0 n1)  [0.001]
+    0.004: (get-down lift5 p3 n0 n1 n0)  [0.001]
+    0.004: (get-down lift1 p2 n0 n2 n1)  [0.001]
+    0.005: (move-up lift4 n8 n11)  [0.001]
+    0.005: (move-up lift5 n0 n12)  [0.001]
+    0.005: (get-down lift1 p4 n0 n1 n0)  [0.001]
+    0.005: (get-on lift7 p2 n0 n0 n1)  [0.001]
+    0.006: (get-down lift4 p1 n11 n1 n0)  [0.001]
+    0.006: (get-on lift7 p4 n0 n1 n2)  [0.001]
+    0.006: (get-on lift1 p3 n0 n0 n1)  [0.001]
+    0.007: (move-up lift7 n0 n12)  [0.001]
+    0.007: (move-up lift1 n0 n2)  [0.001]
+    0.008: (get-down lift7 p2 n12 n2 n1)  [0.001]
+    0.008: (get-on lift1 p0 n2 n1 n2)  [0.001]
+    0.009: (move-down lift7 n12 n9)  [0.001]
+    0.009: (move-up lift1 n2 n3)  [0.001]
+    0.010: (get-down lift7 p4 n9 n1 n0)  [0.001]
+    0.010: (get-down lift1 p0 n3 n2 n1)  [0.001]
+    0.011: (move-down lift1 n3 n1)  [0.001]
+    0.012: (get-down lift1 p3 n1 n1 n0)  [0.001]
+
+    * All goal deadlines now no later than 0.012

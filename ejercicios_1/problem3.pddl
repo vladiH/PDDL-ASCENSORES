@@ -1,4 +1,4 @@
-;aumento de pasajeros
+;incremento de pasajeros
 (define 
     (problem LIFT-PROBLEM)
     (:domain LIFT)

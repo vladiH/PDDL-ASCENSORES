@@ -17,6 +17,7 @@
 
    (:action get-on
     	     :parameters (?l - lift ?p - passenger ?f - integer ?bn - integer ?an - integer)
+			                                                  												
     	     :precondition (and (passenger-at ?p ?f) (lift-at ?l ?f) (on-board ?l ?bn) (can-hold ?l ?an)  (next ?bn ?an))
     	     :effect
     	     (and (not (passenger-at ?p ?f)) (boarded ?p ?l)(not (on-board ?l ?bn) ) (on-board ?l ?an)))

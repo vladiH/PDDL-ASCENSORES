@@ -1,4 +1,4 @@
-;cambio de posiciones inicial
+;Cambiar la posicion inicial de los pasajeros
 (define 
     (problem LIFT-PROBLEM)
     (:domain LIFT)
