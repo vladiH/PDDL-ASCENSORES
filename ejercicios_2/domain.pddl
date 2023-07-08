@@ -24,15 +24,19 @@
    (:durative-action get-on
     	     :parameters (?l - lift ?p - passenger ?f - integer ?bn - integer ?an - integer)
 			 :duration (= ?duration 2)
-    	     :condition (and (at start (passenger-at ?p ?f)) (over all (lift-at ?l ?f)) (at start (on-board ?l ?bn)) (at start (can-hold ?l ?an))  (at start (next ?bn ?an)))
-    	     :effect (and (at start (not (passenger-at ?p ?f))) (at end (boarded ?p ?l))(at start (not (on-board ?l ?bn) )) (at end (on-board ?l ?an))))
+    	     :condition (and (at start (passenger-at ?p ?f)) (over all (lift-at ?l ?f))
+			 (at start (on-board ?l ?bn))(at start (can-hold ?l ?an))  (at start (next ?bn ?an)))
+    	     :effect (and (at start (not (passenger-at ?p ?f))) (at end (boarded ?p ?l))
+			 (at start (not (on-board ?l ?bn) )) (at end (on-board ?l ?an))))
 
    (:durative-action get-down
     	     :parameters (?l - lift ?p - passenger ?f - integer ?bn - integer ?an - integer)
 			 :duration (= ?duration 2)
-    	     :condition (and  (over all (lift-at ?l ?f)) (at start (boarded ?p ?l)) (at start (on-board ?l ?bn)) (at start (next?an ?bn)))
+    	     :condition (and  (over all (lift-at ?l ?f)) (at start (boarded ?p ?l)) 
+			 (at start (on-board ?l ?bn)) (at start (next?an ?bn)))
     	     :effect
-    	     (and (at start (not(boarded ?p ?l))) (at end (passenger-at ?p ?f))(at start (not (on-board ?l ?bn) )) (at end (on-board ?l ?an))))
+    	     (and (at start (not(boarded ?p ?l))) (at end (passenger-at ?p ?f))
+			 (at start (not (on-board ?l ?bn) )) (at end (on-board ?l ?an))))
    
    ;=========================================ascensor lento==================================
    (:durative-action move-up-slow

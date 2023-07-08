@@ -41,15 +41,19 @@
             (= (travel-slow n11 n12) 12)
 
             ;============================tiempo necesario para alcanzar un piso realizado por el ascensor rapido ==============
-            (= (travel-fast n0 n2) 11) (= (travel-fast n0 n4) 13) (= (travel-fast n0 n6) 15) (= (travel-fast n0 n8) 17) (= (travel-fast n0 n10) 19) (= (travel-fast n0 n12) 21)
-            (= (travel-fast n2 n4) 11) (= (travel-fast n2 n6) 13) (= (travel-fast n2 n8) 15) (= (travel-fast n2 n10) 17) (= (travel-fast n2 n12) 19)
+            (= (travel-fast n0 n2) 11) (= (travel-fast n0 n4) 13) (= (travel-fast n0 n6) 15) (= (travel-fast n0 n8) 17)
+            (= (travel-fast n0 n10) 19)(= (travel-fast n0 n12) 21)
+            (= (travel-fast n2 n4) 11) (= (travel-fast n2 n6) 13) (= (travel-fast n2 n8) 15) (= (travel-fast n2 n10) 17) 
+            (= (travel-fast n2 n12) 19)
             (= (travel-fast n4 n6) 11) (= (travel-fast n4 n8) 13) (= (travel-fast n4 n10) 15) (= (travel-fast n4 n12) 17)
             (= (travel-fast n6 n8) 11) (= (travel-fast n6 n10) 13) (= (travel-fast n6 n12) 15)
             (= (travel-fast n8 n10) 11) (= (travel-fast n8 n12) 13)
             (= (travel-fast n10 n12) 11)
 
-            (= (travel-fast n12 n10) 10) (= (travel-fast n12 n8) 12) (= (travel-fast n12 n6) 14) (= (travel-fast n12 n4) 16) (= (travel-fast n12 n2) 18) (= (travel-fast n12 n0) 20)
-            (= (travel-fast n10 n8) 10) (= (travel-fast n10 n6) 12) (= (travel-fast n10 n4) 14) (= (travel-fast n10 n2) 16) (= (travel-fast n10 n0) 18)
+            (= (travel-fast n12 n10) 10) (= (travel-fast n12 n8) 12) (= (travel-fast n12 n6) 14) (= (travel-fast n12 n4) 16) 
+            (= (travel-fast n12 n2) 18) (= (travel-fast n12 n0) 20)
+            (= (travel-fast n10 n8) 10) (= (travel-fast n10 n6) 12) (= (travel-fast n10 n4) 14) (= (travel-fast n10 n2) 16)
+             (= (travel-fast n10 n0) 18)
             (= (travel-fast n8 n6) 10) (= (travel-fast n8 n4) 12) (= (travel-fast n8 n2) 14) (= (travel-fast n8 n0) 16)
             (= (travel-fast n6 n4) 10) (= (travel-fast n6 n2) 12) (= (travel-fast n6 n0) 14)
             (= (travel-fast n4 n2) 10) (= (travel-fast n4 n0) 12)
